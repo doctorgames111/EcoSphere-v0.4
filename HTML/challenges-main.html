@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biogas | Challenges</title>
+    <script src="../JS/navbar.js"></script>
+    <link rel="stylesheet" href="../SCSS/challenges-main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet"/>
+  </head>
+  <body>
+    <navbar-component></navbar-component>
+
+    <!-- HERO SECTION -->
+    <section class="challenges-hero">
+      <div class="hero-content">
+        <h1>Global Environmental Challenges</h1>
+        <p>Understanding the critical issues threatening our planet</p>
+      </div>
+    </section>
+
+    <!-- CHALLENGES GRID -->
+    <section class="page-section bg-light">
+      <div class="page-container">
+        <div class="section-header">
+          <h2>Pressing Environmental Issues</h2>
+          <p class="section-subtitle">Discover the major challenges we must overcome to build a sustainable future</p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="product-filters">
+          <div class="filter-categories">
+            <button class="filter-btn active" data-filter="all">All Challenges</button>
+            <button class="filter-btn" data-filter="climate">Climate</button>
+            <button class="filter-btn" data-filter="pollution">Pollution</button>
+            <button class="filter-btn" data-filter="resources">Resources</button>
+            <button class="filter-btn" data-filter="waste">Waste</button>
+          </div>
+          <div class="filter-controls">
+            <input type="text" id="challengeSearch" class="filter-search" placeholder="Search challenges…" />
+            <button id="advancedFilterBtn" class="filter-btn advanced-btn">Advanced</button>
+          </div>
+        </div>
+
+        <div class="product-grid" id="challengesGrid">
+          <!-- Dynamic cards will be inserted here -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ADVANCED FILTER MODAL & OVERLAY -->
+    <div id="overlay" class="overlay hidden"></div>
+    <div id="advancedModal" class="advanced-modal hidden">
+      <div class="modal-header">
+        <button id="includeBtn" class="mode-btn active">Include</button>
+        <button id="excludeBtn" class="mode-btn">Exclude</button>
+        <button id="closeModal" class="modal-close">×</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-categories">
+          <button class="modal-cat-btn" data-value="climate">Climate</button>
+          <button class="modal-cat-btn" data-value="pollution">Pollution</button>
+          <button class="modal-cat-btn" data-value="resources">Resources</button>
+          <button class="modal-cat-btn" data-value="waste">Waste</button>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button id="clearAdvanced" class="modal-action">Clear</button>
+        <button id="cancelAdvanced" class="modal-action">Cancel</button>
+        <button id="applyAdvanced" class="modal-action primary">Apply</button>
+      </div>
+    </div>
+
+    <!-- CONFIRMATION DIALOG -->
+    <div id="confirmOverlay" class="overlay hidden"></div>
+    <div id="confirmDialog" class="confirm-dialog hidden">
+      <p>You currently have an advanced filter applied. Applying a category will clear the advanced filter. Continue?</p>
+      <div class="confirm-buttons">
+        <button id="confirmOk" class="modal-action primary">OK</button>
+        <button id="confirmCancel" class="modal-action">Cancel</button>
+      </div>
+    </div>
+      </div>
+    </section>
+
+    <!-- CALL TO ACTION -->
+    <section class="page-section bg-green-light">
+      <div class="page-container">
+        <div class="cta-box">
+          <h2>Ready to Make a Difference?</h2>
+          <p>Explore solutions to these challenges and join the movement for a sustainable planet</p>
+          <a href="../HTML/solutions-main.html" class="cta-btn">Explore Solutions</a>
+        </div>
+      </div>
+    </section>
+
+    <script src="../JS/challenges-main.js"></script>
+    <footer-component></footer-component>
+    <script src="../JS/footer.js"></script>
+    <script src="../JS/scroll.js"></script>
+  </body>
+</html>

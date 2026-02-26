@@ -1,0 +1,608 @@
+@use 'global';
+@use 'components';
+
+body {
+  font-family: global.$main-font;
+  color: global.$main-text-dark;
+  background: white;
+}
+
+// ===== UTILITY CLASSES =====
+.hidden {
+  display: none !important;
+}
+
+// ===== HERO SECTION =====
+.about-hero {
+  background: linear-gradient(135deg, global.$primary-600 0%, global.$primary-500 100%);
+  color: white;
+  padding: global.$spacing-3xl global.$spacing-lg;
+  text-align: center;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+
+  .hero-content {
+    max-width: 700px;
+
+    h1 {
+      font-size: global.$font-size-4xl;
+      font-weight: global.$font-weight-bold;
+      margin-bottom: global.$spacing-md;
+      line-height: 1.2;
+    }
+
+    p {
+      font-size: global.$font-size-lg;
+      opacity: 0.95;
+      line-height: 1.6;
+    }
+  }
+}
+
+// ===== SECTION ALTERNATING BACKGROUNDS =====
+.about-section-container {
+  &.bg-alt {
+    background: #f5f5f5;
+  }
+
+  &.bg-white {
+    background: white;
+  }
+}
+
+// ===== CENTERED SECTION HEADER =====
+.section-header-centered {
+  text-align: center;
+  margin-bottom: global.$spacing-3xl;
+
+  h2 {
+    font-size: global.$font-size-3xl;
+    color: global.$primary-700;
+    margin-bottom: global.$spacing-md;
+    font-weight: global.$font-weight-bold;
+  }
+
+  .section-hint {
+    font-size: global.$font-size-base;
+    color: global.$main-text-light;
+    margin-bottom: global.$spacing-lg;
+    animation: fadeInDown 0.6s ease;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+
+    &.fade-out {
+      opacity: 0;
+      transform: translateY(-10px);
+      pointer-events: none;
+    }
+  }
+
+  .section-subtitle {
+    font-size: global.$font-size-lg;
+    color: global.$main-text-light;
+    margin-top: global.$spacing-md;
+    line-height: 1.6;
+  }
+}
+
+// ===== TEAM GRID & FLIP CARDS =====
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: global.$spacing-lg;
+  margin-bottom: global.$spacing-2xl;
+
+  @media (max-width: global.$breakpoint-md) {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: global.$spacing-md;
+  }
+
+  @media (max-width: global.$breakpoint-sm) {
+    grid-template-columns: 1fr;
+    gap: global.$spacing-md;
+  }
+}
+
+.team-card-container {
+  perspective: 1000px;
+  height: 380px;
+  cursor: pointer;
+}
+
+.team-card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transform-style: preserve-3d;
+
+  &.flipped {
+    transform: rotateY(180deg);
+  }
+
+  .team-card-face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: global.$radius-xl;
+    padding: global.$spacing-lg;
+    box-shadow: global.$shadow-lg;
+    transition: all global.$transition-base;
+  }
+
+  .team-card-front {
+    background: white;
+    background-image: linear-gradient(135deg, rgba(34, 197, 94, 0.05), transparent);
+  }
+
+  .team-card-back {
+    background: linear-gradient(135deg, global.$primary-600, global.$primary-700);
+    color: white;
+    transform: rotateY(180deg);
+    padding: global.$spacing-md;
+    overflow-y: auto;
+  }
+
+  .team-photo {
+    width: 140px;
+    height: 140px;
+    border-radius: global.$radius-full;
+    object-fit: cover;
+    margin-bottom: global.$spacing-md;
+    border: 4px solid global.$primary-500;
+    box-shadow: 0 6px 15px rgba(34, 197, 94, 0.2);
+    transition: transform 0.3s ease;
+  }
+
+  .team-name {
+    font-size: global.$font-size-2xl;
+    font-weight: global.$font-weight-bold;
+    color: global.$primary-700;
+    text-align: center;
+    margin-bottom: global.$spacing-sm;
+  }
+
+  .team-role {
+    font-size: global.$font-size-sm;
+    color: global.$main-text-light;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .team-bio {
+    font-size: global.$font-size-sm;
+    line-height: 1.6;
+    color: white;
+    margin-bottom: global.$spacing-md;
+    text-align: center;
+  }
+
+  .team-quote {
+    font-style: italic;
+    font-size: global.$font-size-sm;
+    color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    padding-top: global.$spacing-sm;
+    border-top: 2px solid rgba(255, 255, 255, 0.2);
+
+    &::before {
+      content: '"';
+      margin-right: 0.25rem;
+    }
+
+    &::after {
+      content: '"';
+      margin-left: 0.25rem;
+    }
+  }
+
+  &:hover .team-photo {
+    transform: scale(1.05);
+  }
+}
+
+// ===== TARGET SECTION =====
+.target-content {
+  animation: fadeInUp 0.8s ease;
+}
+
+.target-card-group {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: global.$spacing-lg;
+  margin-bottom: global.$spacing-3xl;
+
+  @media (max-width: global.$breakpoint-md) {
+    grid-template-columns: 1fr;
+    gap: global.$spacing-md;
+  }
+}
+
+.target-item {
+  background: white;
+  padding: global.$spacing-lg;
+  border-radius: global.$radius-lg;
+  box-shadow: global.$shadow-md;
+  text-align: center;
+  transition: all global.$transition-base;
+  border-top: 4px solid global.$primary-500;
+
+  .target-icon {
+    font-size: 3rem;
+    margin-bottom: global.$spacing-md;
+    animation: bounce 2s infinite;
+  }
+
+  h3 {
+    font-size: global.$font-size-xl;
+    color: global.$primary-700;
+    margin-bottom: global.$spacing-md;
+    font-weight: global.$font-weight-bold;
+  }
+
+  p {
+    color: global.$main-text-light;
+    line-height: 1.7;
+    font-size: global.$font-size-sm;
+  }
+
+  &:hover {
+    transform: translateY(-6px);
+    box-shadow: global.$shadow-xl;
+  }
+}
+
+.target-statement {
+  text-align: center;
+  padding: global.$spacing-2xl global.$spacing-lg;
+  background: linear-gradient(135deg, rgba(34, 197, 94, 0.05), rgba(34, 197, 94, 0.02));
+  border-radius: global.$radius-lg;
+  border-left: 5px solid global.$primary-600;
+
+  p {
+    font-size: global.$font-size-lg;
+    color: global.$primary-700;
+    font-weight: global.$font-weight-semibold;
+    line-height: 1.8;
+  }
+}
+
+// ===== CONTACT FORM =====
+.contact-form-wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-form {
+  background: white;
+  padding: global.$spacing-2xl;
+  border-radius: global.$radius-xl;
+  box-shadow: global.$shadow-lg;
+  border-top: 4px solid global.$primary-600;
+
+  .form-group {
+    position: relative;
+    margin-bottom: global.$spacing-lg;
+
+    label {
+      display: block;
+      font-size: global.$font-size-sm;
+      font-weight: global.$font-weight-semibold;
+      color: global.$main-text-dark;
+      margin-bottom: global.$spacing-sm;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: global.$spacing-md;
+      border: 2px solid global.$gray-300;
+      border-radius: global.$radius-md;
+      font-family: inherit;
+      font-size: global.$font-size-base;
+      transition: all global.$transition-base;
+      background: white;
+
+      &:focus {
+        border-color: global.$primary-600;
+        box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.1);
+        outline: none;
+      }
+
+      &::placeholder {
+        color: global.$gray-400;
+      }
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 150px;
+    }
+
+    .error-message {
+      color: #dc2626;
+      font-size: global.$font-size-xs;
+      margin-top: global.$spacing-xs;
+      min-height: 1.25rem;
+      display: block;
+    }
+
+    .feedback-box {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      margin-top: global.$spacing-xs;
+      padding: global.$spacing-sm;
+      border-radius: global.$radius-md;
+      font-size: global.$font-size-xs;
+      opacity: 0;
+      transform: translateY(-5px);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      pointer-events: none;
+
+      &.visible {
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto;
+      }
+
+      &.valid {
+        background: rgba(34, 197, 94, 0.1);
+        color: global.$primary-700;
+        border-left: 3px solid global.$primary-600;
+      }
+
+      &.invalid {
+        background: rgba(220, 38, 38, 0.1);
+        color: #dc2626;
+        border-left: 3px solid #dc2626;
+      }
+    }
+
+    .profanity-warning {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      margin-top: global.$spacing-xs;
+      padding: global.$spacing-sm;
+      background: rgba(255, 193, 7, 0.1);
+      border-left: 3px solid #ffc107;
+      border-radius: global.$radius-md;
+      color: #856404;
+      font-size: global.$font-size-xs;
+      opacity: 0;
+      transform: translateY(-5px);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      pointer-events: none;
+
+      &.visible {
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto;
+      }
+    }
+  }
+}
+
+.contact-btn {
+  width: 100%;
+  padding: global.$spacing-md;
+  background: linear-gradient(135deg, global.$primary-600, global.$primary-700);
+  color: white;
+  border: none;
+  border-radius: global.$radius-md;
+  font-weight: global.$font-weight-bold;
+  font-size: global.$font-size-base;
+  cursor: pointer;
+  transition: all global.$transition-base;
+  margin-top: global.$spacing-lg;
+
+  &:hover {
+    background: linear-gradient(135deg, global.$primary-700, global.$primary-800);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(34, 197, 94, 0.3);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+  }
+}
+
+// ===== CONFIRMATION DIALOG =====
+.confirm-dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.9);
+  background: white;
+  padding: global.$spacing-2xl;
+  border-radius: global.$radius-xl;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  z-index: 1001;
+  max-width: 400px;
+  width: 90%;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  &.visible {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  p {
+    font-size: global.$font-size-base;
+    color: global.$main-text-dark;
+    margin-bottom: global.$spacing-lg;
+    line-height: 1.6;
+    text-align: center;
+  }
+
+  .confirm-buttons {
+    display: flex;
+    gap: global.$spacing-md;
+    justify-content: center;
+
+    .modal-action {
+      padding: global.$spacing-md global.$spacing-lg;
+      border: none;
+      border-radius: global.$radius-md;
+      font-weight: global.$font-weight-semibold;
+      cursor: pointer;
+      transition: all global.$transition-base;
+      font-size: global.$font-size-sm;
+
+      &.primary {
+        background: global.$primary-600;
+        color: white;
+
+        &:hover {
+          background: global.$primary-700;
+          transform: translateY(-2px);
+          box-shadow: 0 6px 15px rgba(34, 197, 94, 0.3);
+        }
+      }
+
+      &:not(.primary) {
+        background: global.$gray-200;
+        color: global.$main-text-dark;
+
+        &:hover {
+          background: global.$gray-300;
+          transform: translateY(-2px);
+        }
+      }
+    }
+  }
+}
+
+// ===== OVERLAY =====
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity global.$transition-base;
+
+  &.visible {
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+
+// ===== ANIMATIONS =====
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+// ===== RESPONSIVE =====
+@media (max-width: global.$breakpoint-md) {
+  .about-hero {
+    min-height: 250px;
+    padding: global.$spacing-2xl global.$spacing-md;
+
+    .hero-content h1 {
+      font-size: global.$font-size-3xl;
+    }
+
+    p {
+      font-size: global.$font-size-base;
+    }
+  }
+
+  .section-header-centered {
+    margin-bottom: global.$spacing-2xl;
+
+    h2 {
+      font-size: global.$font-size-2xl;
+    }
+  }
+
+  .contact-form {
+    padding: global.$spacing-lg;
+  }
+
+  .team-card-container {
+    height: 350px;
+  }
+}
+
+@media (max-width: global.$breakpoint-sm) {
+  .section-header-centered {
+    margin-bottom: global.$spacing-xl;
+
+    h2 {
+      font-size: global.$font-size-xl;
+    }
+  }
+
+  .contact-form {
+    padding: global.$spacing-md;
+
+    .form-group {
+      margin-bottom: global.$spacing-md;
+    }
+  }
+
+  .target-statement {
+    padding: global.$spacing-lg;
+
+    p {
+      font-size: global.$font-size-base;
+    }
+  }
+
+  .team-card-container {
+    height: 320px;
+  }
+}

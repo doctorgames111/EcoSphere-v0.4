@@ -1,0 +1,218 @@
+@use 'global';
+
+// Notification component (standalone)
+.notification-wrapper {
+  position: fixed;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 300px;
+  max-width: 90%;
+  z-index: 2000;
+  pointer-events: none;
+  transition: top 0.5s ease;
+}
+.notification {
+  background: white;
+  border-left: 5px solid;
+  padding: global.$spacing-md global.$spacing-lg;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  font-size: global.$font-size-base;
+  color: global.$main-text-dark;
+  position: relative;
+  overflow: hidden;
+}
+.notification.error { border-color: #dc2626; box-shadow: 0 0 10px rgba(220,38,38,0.6); }
+.notification.success { border-color: global.$primary-500; }
+.notification .timer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  background: currentColor;
+  width: 0;
+  transition: width 5s linear;
+}
+
+
+/* utility helpers */
+.hidden { display: none !important; }
+
+body {
+  font-family: global.$main-font;
+  color: global.$main-text-dark;
+  background: linear-gradient(135deg, global.$primary-50, global.$primary-100);
+}
+
+// reuse login styles but adjust for signup
+.signup-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: global.$spacing-lg;
+  margin-top: 80px;
+
+  .signup-box {
+    background: white;
+    padding: global.$spacing-3xl;
+    border-radius: global.$radius-xl;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+
+    .signup-header {
+      text-align: center;
+      margin-bottom: global.$spacing-2xl;
+
+      .logo-icon {
+        font-size: 3rem;
+        margin-bottom: global.$spacing-md;
+      }
+
+      h1 {
+        font-size: global.$font-size-2xl;
+        color: global.$primary-700;
+        margin-bottom: global.$spacing-sm;
+      }
+
+      p {
+        color: global.$main-text-light;
+        font-size: global.$font-size-sm;
+      }
+    }
+
+    .form-group {
+      position: relative;
+      margin-bottom: global.$spacing-lg;
+
+      label {
+        display: block;
+        font-size: global.$font-size-sm;
+        font-weight: global.$font-weight-semibold;
+        color: global.$main-text-dark;
+        margin-bottom: global.$spacing-sm;
+      }
+
+      input {
+        width: 100%;
+        padding: global.$spacing-md;
+        border: 2px solid global.$gray-300;
+        border-radius: global.$radius-md;
+        font-family: inherit;
+        font-size: global.$font-size-base;
+        transition: all global.$transition-base;
+
+        &:focus {
+          outline: none;
+          border-color: global.$primary-500;
+          box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.1);
+        }
+      }
+
+      .error-message {
+        color: #dc2626; /* red-600 */
+        font-size: global.$font-size-xs;
+        margin-top: global.$spacing-xs;
+        min-height: 1.25rem;
+      }
+    }
+
+    .signup-btn {
+      width: 100%;
+      padding: global.$spacing-md;
+      background: global.$primary-600;
+      color: white;
+      border: none;
+      border-radius: global.$radius-md;
+      font-weight: global.$font-weight-bold;
+      font-size: global.$font-size-base;
+      cursor: pointer;
+      transition: all global.$transition-base;
+      margin-top: global.$spacing-lg;
+
+      &:hover {
+        background: global.$primary-700;
+        transform: translateY(-2px);
+        box-shadow: 0 10px 20px rgba(34, 197, 94, 0.2);
+      }
+
+      &:active {
+        transform: translateY(0);
+      }
+    }
+
+    .password-rules {
+      position: absolute;
+      top: 0;
+      left: calc(100% + 0.5rem);
+      min-width: 250px;
+      background: white;
+      border: 2px solid global.$gray-300;
+      border-radius: global.$radius-md;
+      padding: global.$spacing-md;
+      font-size: global.$font-size-sm;
+      color: global.$main-text-dark;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      z-index: 10;
+
+      &.visible {
+        display: block;
+      }
+
+      .dot {
+        display: inline-block;
+        width: 0.5rem;
+        margin-right: global.$spacing-xs;
+      }
+
+      .good-message {
+        margin-top: global.$spacing-sm;
+        color: global.$primary-600;
+        font-weight: global.$font-weight-semibold;
+      }
+    }
+
+    .feedback-box {
+      position: absolute;
+      top: 0;
+      left: calc(100% + 0.5rem);
+      min-width: 200px;
+      background: white;
+      border: 2px solid global.$gray-300;
+      border-radius: global.$radius-md;
+      padding: global.$spacing-md;
+      font-size: global.$font-size-sm;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      z-index: 10;
+      opacity: 0;
+      transform: translateX(10px);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+
+      &.visible {
+        opacity: 1;
+        transform: translateX(0);
+      }
+
+      &.valid {
+        border-color: global.$primary-600;
+        color: global.$primary-600;
+      }
+      &.invalid {
+        border-color: #dc2626;
+        color: #dc2626;
+      }
+    }
+  }
+}
+
+// RESPONSIVE
+@media (max-width: global.$breakpoint-sm) {
+  .signup-container {
+    padding: global.$spacing-md;
+
+    .signup-box {
+      padding: global.$spacing-2xl;
+    }
+  }
+}

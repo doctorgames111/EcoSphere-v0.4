@@ -1,0 +1,180 @@
+@use 'global';
+
+// Notification component (duplicate from _components.scss)
+.notification-wrapper {
+  position: fixed;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 300px;
+  max-width: 90%;
+  z-index: 2000;
+  pointer-events: none;
+  transition: top 0.5s ease;
+}
+.notification {
+  background: white;
+  border-left: 5px solid;
+  padding: global.$spacing-md global.$spacing-lg;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  font-size: global.$font-size-base;
+  color: global.$main-text-dark;
+  position: relative;
+  overflow: hidden;
+}
+.notification.error { border-color: #dc2626; box-shadow: 0 0 10px rgba(220,38,38,0.6); }
+.notification.success { border-color: global.$primary-500; }
+.notification .timer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  background: currentColor;
+  width: 0;
+  transition: width 5s linear;
+}
+
+
+body {
+  font-family: global.$main-font;
+  color: global.$main-text-dark;
+  background: linear-gradient(135deg, global.$primary-50, global.$primary-100);
+}
+
+// ===== LOGIN CONTAINER =====
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: global.$spacing-lg;
+  margin-top: 80px;
+
+  .login-box {
+    background: white;
+    padding: global.$spacing-3xl;
+    border-radius: global.$radius-xl;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    max-width: 450px;
+    width: 100%;
+
+    .login-header {
+      text-align: center;
+      margin-bottom: global.$spacing-2xl;
+
+      .logo-icon {
+        font-size: 3rem;
+        margin-bottom: global.$spacing-md;
+      }
+
+      h1 {
+        font-size: global.$font-size-2xl;
+        color: global.$primary-700;
+        margin-bottom: global.$spacing-sm;
+      }
+
+      p {
+        color: global.$main-text-light;
+        font-size: global.$font-size-sm;
+      }
+    }
+
+    .form-group {
+      margin-bottom: global.$spacing-lg;
+
+      label {
+        display: block;
+        font-size: global.$font-size-sm;
+        font-weight: global.$font-weight-semibold;
+        color: global.$main-text-dark;
+        margin-bottom: global.$spacing-sm;
+      }
+
+      input {
+        width: 100%;
+        padding: global.$spacing-md;
+        border: 2px solid global.$gray-300;
+        border-radius: global.$radius-md;
+        font-family: inherit;
+        font-size: global.$font-size-base;
+        transition: all global.$transition-base;
+
+        &:focus {
+          outline: none;
+          border-color: global.$primary-500;
+          box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.1);
+        }
+      }
+    }
+
+    .remember-forgot {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: global.$spacing-lg;
+      font-size: global.$font-size-sm;
+
+      a {
+        color: global.$primary-600;
+        text-decoration: none;
+        transition: color global.$transition-base;
+
+        &:hover {
+          color: global.$primary-700;
+        }
+      }
+    }
+
+    .login-btn {
+      width: 100%;
+      padding: global.$spacing-md;
+      background: global.$primary-600;
+      color: white;
+      border: none;
+      border-radius: global.$radius-md;
+      font-weight: global.$font-weight-bold;
+      font-size: global.$font-size-base;
+      cursor: pointer;
+      transition: all global.$transition-base;
+      margin-bottom: global.$spacing-lg;
+
+      &:hover {
+        background: global.$primary-700;
+        transform: translateY(-2px);
+        box-shadow: 0 10px 20px rgba(34, 197, 94, 0.2);
+      }
+
+      &:active {
+        transform: translateY(0);
+      }
+    }
+
+    .signup-link {
+      text-align: center;
+      color: global.$main-text-light;
+      font-size: global.$font-size-sm;
+
+      a {
+        color: global.$primary-600;
+        font-weight: global.$font-weight-semibold;
+        text-decoration: none;
+
+        &:hover {
+          color: global.$primary-700;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+// ===== RESPONSIVE =====
+@media (max-width: global.$breakpoint-sm) {
+  .login-container {
+    padding: global.$spacing-md;
+
+    .login-box {
+      padding: global.$spacing-2xl;
+    }
+  }
+}

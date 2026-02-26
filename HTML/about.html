@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecosphere | About</title>
+    <script src="../JS/navbar.js"></script>
+    <link rel="stylesheet" href="../SCSS/about.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet"/>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  </head>
+  <body>
+    <navbar-component></navbar-component>
+
+    <!-- HERO -->
+    <section class="about-hero">
+      <div class="hero-content">
+        <h1>About Our Mission</h1>
+        <p>Dedicated to a greener, cleaner future for all</p>
+      </div>
+    </section>
+
+    <!-- WHO WE ARE - TEAM MEMBERS SECTION -->
+    <section class="page-section bg-alt about-section-container">
+      <div class="page-container">
+        <div class="section-header-centered">
+          <h2>Who We Are</h2>
+          <p class="section-hint" id="cardHint">💡 Click on the cards to learn more about our team members</p>
+        </div>
+
+        <div class="team-grid" id="teamGrid">
+          <!-- Team cards will be populated by JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- OUR TARGET SECTION -->
+    <section class="page-section bg-white about-section-container">
+      <div class="page-container">
+        <div class="section-header-centered">
+          <h2>Our Target</h2>
+        </div>
+
+        <div class="target-content animate-on-scroll" data-animate="fade-in-up">
+          <div class="target-card-group">
+            <div class="target-item">
+              <div class="target-icon"><i class="fas fa-earth-americas"></i></div>
+              <h3>Centralized Platform</h3>
+              <p>We bring together environmental solutions, research, technology, and challenges in one unified platform. No more scattered information—everything you need to make a real impact is here.</p>
+            </div>
+            <div class="target-item">
+              <div class="target-icon"><i class="fas fa-rocket"></i></div>
+              <h3>Empowering Change</h3>
+              <p>Our mission is to inspire and enable individuals and communities to take meaningful environmental action. By providing resources, knowledge, and connection, we transform awareness into action.</p>
+            </div>
+            <div class="target-item">
+              <div class="target-icon"><i class="fas fa-handshake"></i></div>
+              <h3>Global Movement</h3>
+              <p>We believe sustainable change happens through collaboration. We connect innovators, scientists, organizations, and citizens worldwide to create a force for environmental transformation.</p>
+            </div>
+          </div>
+
+          <div class="target-statement animate-on-scroll" data-animate="fade-in-up">
+            <p>Every step counts. Every voice matters. Together, we're building a sustainable future for generations to come.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT US SECTION -->
+    <section class="page-section bg-alt about-section-container">
+      <div class="page-container">
+        <div class="section-header-centered">
+          <h2>Get In Touch</h2>
+          <p class="section-subtitle">We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+        </div>
+
+        <div class="contact-form-wrapper animate-on-scroll" data-animate="fade-in-up">
+          <form id="contactForm" class="contact-form" novalidate>
+            <div class="form-group">
+              <label for="contactName">Full Name</label>
+              <input type="text" id="contactName" name="fullName" placeholder="Your full name" required />
+              <div class="error-message"></div>
+            </div>
+
+            <div class="form-group">
+              <label for="contactEmail">Email Address</label>
+              <input type="email" id="contactEmail" name="email" placeholder="your.email@example.com" required />
+              <div id="emailFeedbackContact" class="feedback-box hidden"></div>
+              <div class="error-message"></div>
+            </div>
+
+            <div class="form-group">
+              <label for="contactMessage">Message</label>
+              <textarea id="contactMessage" name="message" placeholder="Write your message here..." rows="6" required></textarea>
+              <div id="profanityWarning" class="profanity-warning hidden">
+                <span>⚠️ Your message contains inappropriate content. Please review it.</span>
+              </div>
+              <div class="error-message"></div>
+            </div>
+
+            <button type="submit" class="contact-btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONFIRMATION DIALOG -->
+    <div id="confirmOverlay" class="overlay hidden"></div>
+    <div id="confirmDialog" class="confirm-dialog hidden">
+      <p>Are you sure you want to send this message?</p>
+      <div class="confirm-buttons">
+        <button id="confirmSend" class="modal-action primary">Send</button>
+        <button id="confirmCancel" class="modal-action">Cancel</button>
+      </div>
+    </div>
+
+    <footer-component></footer-component>
+    <script src="../JS/footer.js"></script>
+    <script src="../JS/scroll.js"></script>
+    <script src="../JS/notifications.js"></script>
+    <script src="../JS/about.js"></script>
+  </body>
+</html>

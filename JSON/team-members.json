@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Yassin Alaa",
+    "role": "",
+    "image": "../MultiMedia/Images/default-user-icon.webp",
+    "bio": "A high school student in a STEM school in Egypt who wants to make an impact in environmental science and technology.",
+    "goals": "My mission is to democratize access to environmental information and empower every individual to make data-driven decisions for a sustainable future."
+  },
+  {
+    "id": 2,
+    "name": "Youssef Bahaa",
+    "role": "",
+    "image": "../MultiMedia/Images/default-user-icon.webp",
+    "bio": "A high school student in a private language school in Egypt with a passion for environmental science and sustainability.",
+    "goals": "I believe that through collaboration and innovation, we can transform environmental challenges into opportunities for positive change."
+  },
+  {
+    "id": 3,
+    "name": "Mariam",
+    "role": "",
+    "image": "../MultiMedia/Images/default-user-icon.webp",
+    "bio": "A high school student in a STEM school in Egypt who shows a strong interest in environmental issues and sustainability.",
+    "goals": "My vision is to inspire the next generation of environmental leaders and create lasting impact through collective action."
+  }
+]

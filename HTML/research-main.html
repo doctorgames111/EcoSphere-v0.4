@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biogas | Researches</title>
+    <script src="../JS/navbar.js"></script>
+    <link rel="stylesheet" href="../SCSS/research-main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet"/>
+  </head>
+  <body>
+    <navbar-component></navbar-component>
+
+    <!-- HERO SECTION -->
+    <section class="research-hero">
+      <div class="hero-content">
+        <h1>Environmental Research</h1>
+        <p>Data-driven insights powering progress</p>
+      </div>
+    </section>
+
+    <!-- RESEARCH GRID -->
+    <section class="page-section bg-white">
+      <div class="page-container">
+        <div class="section-header animate-on-scroll" data-animate="fade-in-up">
+          <h2>Latest Studies & Statistics</h2>
+          <p class="section-subtitle">Explore the data shaping our strategies</p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="product-filters" id="categoryControls">
+          <!-- dropdown lists will be generated via JavaScript -->
+        </div>
+
+        <div class="product-grid" id="researchGrid">
+          <!-- research cards inserted by JS -->
+        </div>
+      </div>
+    </section>
+
+    <script src="../JS/scroll.js"></script>
+    <script src="../JS/research-main.js"></script>
+    <footer-component></footer-component>
+    <script src="../JS/footer.js"></script>
+  </body>
+</html>

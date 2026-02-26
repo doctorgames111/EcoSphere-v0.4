@@ -1,0 +1,976 @@
+[
+  {
+    "id": 1,
+    "title": "Solar energy status in the world: A comprehensive review",
+    "subtopic": "Solar",
+    "date": "2023-11",
+    "image": "../MultiMedia/Images/solutions-main/solar-power-systems.webp",
+    "link": "https://www.sciencedirect.com/science/article/pii/S2352484723014579"
+  },
+  {
+    "id": 2,
+    "title": "Solar energy technology and its roles in sustainable development",
+    "subtopic": "Solar",
+    "date": "2022-06",
+    "image": "../MultiMedia/Images/solutions-main/solar-power-systems.webp",
+    "link": "https://academic.oup.com/ce/article/6/3/476/6606003"
+  },
+  {
+    "id": 3,
+    "title": "Solar Energy Catalysis",
+    "subtopic": "Solar",
+    "date": "2022-04",
+    "image": "../MultiMedia/Images/solutions-main/solar-power-systems.webp",
+    "link": "https://onlinelibrary.wiley.com/doi/full/10.1002/ange.202204880"
+  },
+
+  {
+    "id": 4,
+    "title": "Advancing Wind Energy Efficiency: A Systematic Review of Aerodynamic Optimization in Wind Turbine Blade Design",
+    "subtopic": "Wind",
+    "date": "2024-06",
+    "image": "../MultiMedia/Images/solutions-main/wind-turbines.webp",
+    "link": "https://www.mdpi.com/1996-1073/17/12/2919"
+  },
+  {
+    "id": 5,
+    "title": "Advancements in piezoelectric wind energy harvesting: A review",
+    "subtopic": "Wind",
+    "date": "2024-03",
+    "image": "../MultiMedia/Images/solutions-main/wind-turbines.webp",
+    "link": "https://www.sciencedirect.com/science/article/pii/S2590123024000306"
+  },
+  {
+    "id": 6,
+    "title": "Machine learning and the renewable energy revolution: Exploring solar and wind energy solutions for a sustainable future including innovations in energy storage",
+    "subtopic": "Wind",
+    "date": "2024-01",
+    "image": "../MultiMedia/Images/solutions-main/wind-turbines.webp",
+    "link": "https://onlinelibrary.wiley.com/doi/full/10.1002/sd.2885"
+  },
+
+  {
+    "id": 7,
+    "title": "The new role of sustainable hydropower in flexible energy systems and its technical evolution through innovation and digitalization",
+    "subtopic": "Hydropower",
+    "date": "2024-09",
+    "image": "../MultiMedia/Images/researches-main/hydropower.webp",
+    "link": "https://www.sciencedirect.com/science/article/pii/S0960148124009005"
+  },
+  {
+    "id": 8,
+    "title": "Climate change and the hydropower sector: A global review",
+    "subtopic": "Hydropower",
+    "date": "2022-01",
+    "image": "../MultiMedia/Images/researches-main/hydropower.webp",
+    "link": "https://wires.onlinelibrary.wiley.com/doi/full/10.1002/wcc.757"
+  },
+  {
+    "id": 9,
+    "title": "Sustainable hydropower in the 21st century",
+    "subtopic": "Hydropower",
+    "date": "2018-11",
+    "image": "../MultiMedia/Images/researches-main/hydropower.webp",
+    "link": "https://www.pnas.org/doi/abs/10.1073/pnas.1809426115"
+  },
+
+  {
+    "id": 10,
+    "title": "Biogas: Developments and perspectives in Europe",
+    "subtopic": "Biogas",
+    "date": "2018-12",
+    "image": "../MultiMedia/Images/solutions-main/biogas.webp",
+    "link": "https://www.sciencedirect.com/science/article/pii/S096014811830301X"
+  },
+  {
+    "id": 11,
+    "title": "Biogas production: current state and perspectives",
+    "subtopic": "Biogas",
+    "date": "2009-09",
+    "image": "../MultiMedia/Images/solutions-main/biogas.webp",
+    "link": "https://link.springer.com/article/10.1007/S00253-009-2246-7"
+  },
+  {
+    "id": 12,
+    "title": "Biogas Production and Applications in the Sustainable Energy Transition",
+    "subtopic": "Biogas",
+    "date": "2022-07",
+    "image": "../MultiMedia/Images/solutions-main/biogas.webp",
+    "link": "https://onlinelibrary.wiley.com/doi/full/10.1155/2022/8750221"
+  },
+
+  {
+    "id": 13,
+    "title": "Agricultural Greenhouses: Resource Management Technologies and Perspectives for Zero Greenhouse Gas Emissions ",
+    "subtopic": "Greenhouse Gases",
+    "date": "2023-07",
+    "image": "../MultiMedia/Images/researches-main/greenhouse-gases.webp",
+    "link": "https://www.mdpi.com/2077-0472/13/7/1464"
+  },
+  {
+    "id": 14,
+    "title": "Natural resource scarcity, fossil fuel energy consumption, and total greenhouse gas emissions in top emitting countries",
+    "subtopic": "Greenhouse Gases",
+    "date": "2024-03",
+    "image": "../MultiMedia/Images/researches-main/greenhouse-gases.webp",
+    "link": "https://www.sciencedirect.com/science/article/pii/S1674987123002244"
+  },
+  {
+    "id": 15,
+    "title": "Greenhouse gases emission from agricultural soil: A review",
+    "subtopic": "Greenhouse Gases",
+    "date": "2023-03",
+    "image": "../MultiMedia/Images/researches-main/greenhouse-gases.webp",
+    "link": "https://www.sciencedirect.com/science/article/pii/S2666154323000406"
+  },
+
+  {
+    "id": 16,
+    "title": "A Definition of ‘Carbon Footprint’",
+    "subtopic": "Carbon Footprint",
+    "date": "2007-06",
+    "image": "../MultiMedia/Images/researches-main/carbon-footprint.webp",
+    "link": "https://d1wqtxts1xzle7.cloudfront.net/45307863/ISA-UK_Report_07-01_carbon_footprint-libre.pdf?1462274117=&response-content-disposition=inline%3B+filename%3DA_definition_of_carbon_footprint.pdf&Expires=1772049501&Signature=PPnSE69YsIlOEkQUaNfve99ajGCroP7gxM2qrg4aSKGKShuvi8Si~qAHc7aoM8n6OXjzKYINWqUay0Fp83vQ~zlQMt2sf5z0BdPymL7-Rn-0LJTsh97LAFwOasPiMDNVHkfvs169hyJGbJnX1ysy6RSHM4yOVVs-R1vk~7ussXXQ6vFnO3n1Zk~Ih3NHyTMdUnAwzImtEnsBTK2OIpcJVbLFYrfRUGV9xkgoJIPKwp4JKgR2j4MM8Y8FWizsEmyw1nDUuLA6FMN3KKnivcjgLml~ChBrESGddA5HdmjAlmxl-qf5ntJ-YWchx4vzwOzBhZ2FYWsYsbXcDPm0lkFluQ__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA"
+  },
+  {
+    "id": 17,
+    "title": "Carbon footprints evaluation for sustainable food processing system development: A comprehensive review",
+    "subtopic": "Carbon Footprint",
+    "date": "2023-06",
+    "image": "../MultiMedia/Images/researches-main/carbon-footprint.webp",
+    "link": "https://www.sciencedirect.com/science/article/pii/S2666833523000011"
+  },
+  {
+    "id": 18,
+    "title": "Carbon footprint management: A review of construction industry",
+    "subtopic": "Carbon Footprint",
+    "date": "2022-08",
+    "image": "../MultiMedia/Images/researches-main/carbon-footprint.webp",
+    "link": "https://www.sciencedirect.com/science/article/pii/S2666790822001367"
+  },
+
+  {
+    "id": 19,
+    "title": "Arctic marine heatwaves forced by greenhouse gases and triggered by abrupt sea-ice melt",
+    "subtopic": "Ice Melt",
+    "date": "2024-02",
+    "image": "../MultiMedia/Images/researches-main/ice-melt.webp",
+    "link": "https://www.nature.com/articles/s43247-024-01215-y"
+  },
+  {
+    "id": 20,
+    "title": "Antarctic shelf ocean warming and sea ice melt affected by projected El Niño changes",
+    "subtopic": "Ice Melt",
+    "date": "2023-02",
+    "image": "../MultiMedia/Images/researches-main/ice-melt.webp",
+    "link": "https://www.nature.com/articles/s41558-023-01610-x"
+  },
+  {
+    "id": 21,
+    "title": "Possible impacts of anomalous Arctic sea ice melting on summer atmosphere",
+    "subtopic": "Ice Melt",
+    "date": "2021-08",
+    "image": "../MultiMedia/Images/researches-main/ice-melt.webp",
+    "link": "https://rmets.onlinelibrary.wiley.com/doi/full/10.1002/joc.7337"
+  },
+
+  {
+    "id": 22,
+    "title": "Reassessing the role of urban green space in air pollution control",
+    "subtopic": "Air Pollution",
+    "date": "2024-01",
+    "image": "../MultiMedia/Images/researches-main/air-pollution.webp",
+    "link": "https://www.pnas.org/doi/abs/10.1073/pnas.2306200121"
+  },
+  {
+    "id": 23,
+    "title": "Air pollution and health",
+    "subtopic": "Air Pollution",
+    "date": "2002-10",
+    "image": "../MultiMedia/Images/researches-main/air-pollution.webp",
+    "link": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(02)11274-8/fulltext"
+  },
+  {
+    "id": 24,
+    "title": "Breathing in danger: Understanding the multifaceted impact of air pollution on health impacts",
+    "subtopic": "Air Pollution",
+    "date": "2024-07",
+    "image": "../MultiMedia/Images/researches-main/air-pollution.webp",
+    "link": "https://www.sciencedirect.com/science/article/pii/S0147651324006080"
+  },
+
+  {
+    "id": 25,
+    "title": "Human Health Risks due to Exposure to Water Pollution: A Review ",
+    "subtopic": "Water Pollution",
+    "date": "2023-07",
+    "image": "../MultiMedia/Images/researches-main/water-pollution.webp",
+    "link": "https://www.mdpi.com/2073-4441/15/14/2532"
+  },
+  {
+    "id": 26,
+    "title": "Effects of Water Pollution on Human Health and Disease Heterogeneity: A Review",
+    "subtopic": "Water Pollution",
+    "date": "2022-06",
+    "image": "../MultiMedia/Images/researches-main/water-pollution.webp",
+    "link": "https://www.frontiersin.org/journals/environmental-science/articles/10.3389/fenvs.2022.880246/full?utm_source=chatgpt.com"
+  },
+  {
+    "id": 27,
+    "title": "Water Pollution from Agricultural Activities: A Critical Global Review",
+    "subtopic": "Water Pollution",
+    "date": "2023-01",
+    "image": "../MultiMedia/Images/researches-main/water-pollution.webp",
+    "link": "https://iscientific.org/wp-content/uploads/2023/05/19-IJCBS-23-23-24.pdf"
+  },
+
+  {
+    "id": 28,
+    "title": "A review of the cost and effectiveness of solutions to address plastic pollution",
+    "subtopic": "Plastic Pollution",
+    "date": "2022-01",
+    "image": "../MultiMedia/Images/researches-main/plastic-pollution.webp",
+    "link": "https://link.springer.com/article/10.1007/s11356-021-18038-5"
+  },
+  {
+    "id": 29,
+    "title": "Current trends of unsustainable plastic production and micro(nano)plastic pollution",
+    "subtopic": "Plastic Pollution",
+    "date": "2023-03",
+    "image": "../MultiMedia/Images/researches-main/plastic-pollution.webp",
+    "link": "https://www.sciencedirect.com/science/article/pii/S0165993623000717"
+  },
+  {
+    "id": 30,
+    "title": "Plastic pollution in the Arctic",
+    "subtopic": "Plastic Pollution",
+    "date": "2022-04",
+    "image": "../MultiMedia/Images/researches-main/plastic-pollution.webp",
+    "link": "https://www.nature.com/articles/s43017-022-00279-8"
+  },
+
+  {
+    "id": 31,
+    "title": "Noise Pollution and Impact on Children Health",
+    "subtopic": "Noise Pollution",
+    "date": "2018-01",
+    "image": "../MultiMedia/Images/researches-main/noise-pollution.webp",
+    "link": "https://link.springer.com/article/10.1007/s12098-017-2579-7"
+  },
+  {
+    "id": 32,
+    "title": "Exploring Noise Pollution, Causes, Effects, and Mitigation Strategies: A Review Paper",
+    "subtopic": "Noise Pollution",
+    "date": "2023-01",
+    "image": "../MultiMedia/Images/researches-main/noise-pollution.webp",
+    "link": "https://pdfs.semanticscholar.org/53ba/0ef1d37169abbebc4fdc60698d15478d82bf.pdf"
+  },
+  {
+    "id": 33,
+    "title": "Noise pollution and human cognition: An updated systematic review and meta-analysis of recent evidence",
+    "subtopic": "Noise Pollution",
+    "date": "2022-01",
+    "image": "../MultiMedia/Images/researches-main/noise-pollution.webp",
+    "link": "https://www.sciencedirect.com/science/article/pii/S0160412021005304"
+  },
+
+  {
+    "id": 34,
+    "title": "A global perspective on e-waste recycling",
+    "subtopic": "Recycling",
+    "date": "2023-03",
+    "image": "../MultiMedia/Images/researches-main/recycling.webp",
+    "link": "https://www.sciencedirect.com/science/article/pii/S2773167723000055"
+  },
+  {
+    "id": 35,
+    "title": "Plastic Waste Recycling─A Chemical Recycling Perspective",
+    "subtopic": "Recycling",
+    "date": "2024-07",
+    "image": "../MultiMedia/Images/researches-main/recycling.webp",
+    "link": "https://pubs.acs.org/doi/full/10.1021/acssuschemeng.4c02551"
+  },
+  {
+    "id": 36,
+    "title": "Recycling processes of polyester-containing textile waste-A review",
+    "subtopic": "Recycling",
+    "date": "2025-06",
+    "image": "../MultiMedia/Images/researches-main/recycling.webp",
+    "link": "https://www.sciencedirect.com/science/article/pii/S0921344925001351"
+  },
+
+  {
+    "id": 37,
+    "title": "Waste Management through Composting: Challenges and Potentials",
+    "subtopic": "Composting",
+    "date": "2020-05",
+    "image": "../MultiMedia/Images/solutions-main/composting-systems.webp",
+    "link": "https://www.mdpi.com/2071-1050/12/11/4456"
+  },
+  {
+    "id": 38,
+    "title": "Composting Processes for Agricultural Waste Management: A Comprehensive Review",
+    "subtopic": "Composting",
+    "date": "2023-03",
+    "image": "../MultiMedia/Images/solutions-main/composting-systems.webp",
+    "link": "https://www.mdpi.com/2227-9717/11/3/731"
+  },
+  {
+    "id": 39,
+    "title": "Composting as a Sustainable Solution for Organic Solid Waste Management: Current Practices and Potential Improvements",
+    "subtopic": "Composting",
+    "date": "2024-07",
+    "image": "../MultiMedia/Images/solutions-main/composting-systems.webp",
+    "link": "https://www.mdpi.com/2071-1050/16/15/6329"
+  },
+
+  {
+    "id": 40,
+    "title": "Landfill Impacts on the Environment—Review",
+    "subtopic": "Landfill",
+    "date": "2019-10",
+    "image": "../MultiMedia/Images/researches-main/landfill.webp",
+    "link": "https://www.mdpi.com/2076-3263/9/10/431"
+  },
+  {
+    "id": 41,
+    "title": "Microplastics in landfill leachate: Sources, detection, occurrence, and removal",
+    "subtopic": "Landfill",
+    "date": "2023-10",
+    "image": "../MultiMedia/Images/researches-main/landfill.webp",
+    "link": "https://www.sciencedirect.com/science/article/pii/S2666498423000212"
+  },
+  {
+    "id": 42,
+    "title": "Landfill leachate: Sources, nature, organic composition, and treatment: An environmental overview",
+    "subtopic": "Landfill",
+    "date": "2024-01",
+    "image": "../MultiMedia/Images/researches-main/landfill.webp",
+    "link": "https://www.sciencedirect.com/science/article/pii/S209044792300182X"
+  },
+
+  {
+    "id": 43,
+    "title": "Corporate accountability for biodiversity and species extinction: Evidence from organisations reporting on their impacts on nature",
+    "subtopic": "extinction",
+    "date": "2021-10",
+    "image": "../MultiMedia/Images/researches-main/extinction.webp",
+    "link": "https://onlinelibrary.wiley.com/doi/full/10.1002/bse.2890"
+  },
+  {
+    "id": 44,
+    "title": "Matrix condition mediates the effects of habitat fragmentation on species extinction risk",
+    "subtopic": "extinction",
+    "date": "2022-02",
+    "image": "../MultiMedia/Images/researches-main/extinction.webp",
+    "link": "https://www.nature.com/articles/s41467-022-28270-3"
+  },
+  {
+    "id": 45,
+    "title": "Undescribed species have higher extinction risk than known species",
+    "subtopic": "extinction",
+    "date": "2022-02",
+    "image": "../MultiMedia/Images/researches-main/extinction.webp",
+    "link": "https://conbio.onlinelibrary.wiley.com/doi/full/10.1111/conl.12876"
+  },
+
+  {
+    "id": 46,
+    "title": "Effects of War and Civil Strife on Wildlife and Wildlife Habitats",
+    "subtopic": "wildlife",
+    "date": "2002-11",
+    "image": "../MultiMedia/Images/researches-main/wildlife.webp",
+    "link": "https://conbio.onlinelibrary.wiley.com/doi/full/10.1046/j.1523-1739.2002.00306.x"
+  },
+  {
+    "id": 47,
+    "title": "Understanding the dynamics of physiological changes, protein expression, and PFAS in wildlife",
+    "subtopic": "wildlife",
+    "date": "2022-01",
+    "image": "../MultiMedia/Images/researches-main/wildlife.webp",
+    "link": "https://www.sciencedirect.com/science/article/pii/S0160412021006620"
+  },
+  {
+    "id": 48,
+    "title": "Determining the sustainability of legal wildlife trade",
+    "subtopic": "wildlife",
+    "date": "2023-09",
+    "image": "../MultiMedia/Images/researches-main/wildlife.webp",
+    "link": "https://www.sciencedirect.com/science/article/pii/S0301479723007752"
+  },
+
+  {
+    "id": 49,
+    "title": "Habitat Loss and Extinction in the Hotspots of Biodiversity",
+    "subtopic": "Habitat Loss",
+    "date": "2002-08",
+    "image": "../MultiMedia/Images/challenges-main/biodiversity-loss.webp",
+    "link": "https://conbio.onlinelibrary.wiley.com/doi/full/10.1046/j.1523-1739.2002.00530.x"
+  },
+  {
+    "id": 50,
+    "title": "The impact of habitat loss and population fragmentation on genomic erosion",
+    "subtopic": "Habitat Loss",
+    "date": "2023-08",
+    "image": "../MultiMedia/Images/challenges-main/biodiversity-loss.webp",
+    "link": "https://link.springer.com/article/10.1007/s10592-023-01548-9"
+  },
+  {
+    "id": 51,
+    "title": "Habitat Loss, the Dynamics of Biodiversity, and a Perspective on Conservation",
+    "subtopic": "Habitat Loss",
+    "date": "2011-03",
+    "image": "../MultiMedia/Images/challenges-main/biodiversity-loss.webp",
+    "link": "https://link.springer.com/article/10.1007/s13280-011-0147-3"
+  },
+
+  {
+    "id": 52,
+    "title": "Global Trends of Forest Loss Due to Fire From 2001 to 2019",
+    "subtopic": "Forest Loss",
+    "date": "2022-03",
+    "image": "../MultiMedia/Images/challenges-main/deforestation.webp",
+    "link": "https://www.frontiersin.org/journals/remote-sensing/articles/10.3389/frsen.2022.825190/full?trk=public_post_comment-text"
+  },
+  {
+    "id": 53,
+    "title": "Tropical forest loss impoverishes arboreal mammal assemblages by increasing tree canopy openness",
+    "subtopic": "Forest Loss",
+    "date": "2022-09",
+    "image": "../MultiMedia/Images/challenges-main/deforestation.webp",
+    "link": "https://esajournals.onlinelibrary.wiley.com/doi/full/10.1002/eap.2744"
+  },
+  {
+    "id": 54,
+    "title": "Classifying the risk of forest loss in the Peruvian amazon rainforest: An alternative approach for sustainable forest management using artificial intelligence",
+    "subtopic": "Forest Loss",
+    "date": "2023-12",
+    "image": "../MultiMedia/Images/challenges-main/deforestation.webp",
+    "link": "https://www.sciencedirect.com/science/article/pii/S2666719323000729"
+  },
+
+  {
+    "id": 55,
+    "title": "Urbanization driving changes in plant species and communities – A global view",
+    "subtopic": "Urbanization",
+    "date": "2022-10",
+    "image": "../MultiMedia/Images/researches-main/urbanization.webp",
+    "link": "https://www.sciencedirect.com/science/article/pii/S2351989422002451"
+  },
+  {
+    "id": 56,
+    "title": "Urbanization",
+    "subtopic": "Urbanization",
+    "date": "2018-09",
+    "image": "../MultiMedia/Images/researches-main/urbanization.webp",
+    "link": "https://ourworldindata.org/urbanization?ref=onlys.ky"
+  },
+  {
+    "id": 57,
+    "title": "Urbanization, urbanicity, and health",
+    "subtopic": "Urbanization",
+    "date": "2002-03",
+    "image": "../MultiMedia/Images/researches-main/urbanization.webp",
+    "link": "https://link.springer.com/article/10.1093/jurban/79.suppl_1.S1"
+  },
+
+  {
+    "id": 58,
+    "title": "The use of remote sensing for desertification studies: A review",
+    "subtopic": "Desertification",
+    "date": "2022-11",
+    "image": "../MultiMedia/Images/researches-main/desertification.webp",
+    "link": "https://www.sciencedirect.com/science/article/pii/S0140196322001240"
+  },
+  {
+    "id": 59,
+    "title": "Desertification in northern China from 2000 to 2020: The spatial–temporal processes and driving mechanisms",
+    "subtopic": "Desertification",
+    "date": "2024-09",
+    "image": "../MultiMedia/Images/researches-main/desertification.webp",
+    "link": "https://www.sciencedirect.com/science/article/pii/S157495412400311X"
+  },
+  {
+    "id": 60,
+    "title": "The Great Green Wall Initiatives and Opportunities for Integration of Dryland Agroforestry to Mitigate Desertification",
+    "subtopic": "Desertification",
+    "date": "2023-04",
+    "image": "../MultiMedia/Images/researches-main/desertification.webp",
+    "link": "https://link.springer.com/chapter/10.1007/978-981-19-4602-8_6"
+  },
+
+  {
+    "id": 61,
+    "title": "Assessing the climate benefits of afforestation in the Canadian Northern Boreal and Southern Arctic",
+    "subtopic": "Afforestation",
+    "date": "2025-02",
+    "image": "../MultiMedia/Images/researches-main/afforestation.webp",
+    "link": "https://www.nature.com/articles/s41467-025-56699-9"
+  },
+  {
+    "id": 62,
+    "title": "Nature-based framework for sustainable afforestation in global drylands under changing climate",
+    "subtopic": "Afforestation",
+    "date": "2021-12",
+    "image": "../MultiMedia/Images/researches-main/afforestation.webp",
+    "link": "https://onlinelibrary.wiley.com/doi/full/10.1111/gcb.16059"
+  },
+  {
+    "id": 63,
+    "title": "Pain or gain: the dual role of afforestation effects on soil pH at the global scale",
+    "subtopic": "Afforestation",
+    "date": "2023-08",
+    "image": "../MultiMedia/Images/researches-main/afforestation.webp",
+    "link": "https://link.springer.com/article/10.1007/s11104-023-06254-6"
+  },
+
+  {
+    "id": 64,
+    "title": "Marine heat waves: Characterizing a major climate impact in the Mediterranean",
+    "subtopic": "Marine Heat",
+    "date": "2023-02",
+    "image": "../MultiMedia/Images/researches-main/marine-heat.webp",
+    "link": "https://www.sciencedirect.com/science/article/pii/S0048969722077245"
+  },
+  {
+    "id": 65,
+    "title": "Impacts of marine heat extremes on bivalves",
+    "subtopic": "Marine Heat",
+    "date": "2023-06",
+    "image": "../MultiMedia/Images/researches-main/marine-heat.webp",
+    "link": "https://www.frontiersin.org/journals/marine-science/articles/10.3389/fmars.2023.1159261/full?utm_source=facebook&utm_medium=cpc&utm_campaign=imp_impmet_08-23_fmars_en_nat_fos-inst__reg13&utm_content=article&utm_id=120228753871070493_v2_s05_e7273&utm_term=120229641678250493"
+  },
+  {
+    "id": 66,
+    "title": "The recent normalization of historical marine heat extremes",
+    "subtopic": "Marine Heat",
+    "date": "2022-02",
+    "image": "../MultiMedia/Images/researches-main/marine-heat.webp",
+    "link": "https://journals.plos.org/climate/article?id=10.1371/journal.pclm.0000007&trk=public_post_comment-text"
+  },
+
+  {
+    "id": 67,
+    "title": "Is Ocean Acidification Really a Threat to Marine Calcifiers? A Systematic Review and Meta-Analysis of 980+ Studies Spanning Two Decades",
+    "subtopic": "Ocean Acidification",
+    "date": "2022-08",
+    "image": "../MultiMedia/Images/challenges-main/ocean-acidification.webp",
+    "link": "https://onlinelibrary.wiley.com/doi/full/10.1002/smll.202107407"
+  },
+  {
+    "id": 68,
+    "title": "Global Surface Ocean Acidification Indicators From 1750 to 2100",
+    "subtopic": "Ocean Acidification",
+    "date": "2023-03",
+    "image": "../MultiMedia/Images/challenges-main/ocean-acidification.webp",
+    "link": "https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2022MS003563"
+  },
+  {
+    "id": 69,
+    "title": "Biological Responses to Ocean Acidification Are Changing the Global Ocean Carbon Cycle",
+    "subtopic": "Ocean Acidification",
+    "date": "2025-03",
+    "image": "../MultiMedia/Images/challenges-main/ocean-acidification.webp",
+    "link": "https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2024GB008358"
+  },
+
+  {
+    "id": 70,
+    "title": "Fishing and Overfishing-Sustainable Harvest of the Sea",
+    "subtopic": "Overfishing",
+    "date": "2022-11",
+    "image": "../MultiMedia/Images/challenges-main/overfishing.webp",
+    "link": "https://link.springer.com/chapter/10.1007/978-3-031-19467-2_4"
+  },
+  {
+    "id": 71,
+    "title": "The Threshold Effect of Overfishing on Global Fishery Outputs: International Evidence from a Sustainable Fishery Perspective",
+    "subtopic": "Overfishing",
+    "date": "2023-01",
+    "image": "../MultiMedia/Images/challenges-main/overfishing.webp",
+    "link": "https://www.mdpi.com/2410-3888/8/2/71"
+  },
+  {
+    "id": 72,
+    "title": "Improving China’s maritime law enforcement operations against overfishing in the South China Sea—Based on a comparison with the Indonesian law enforcement system against IUU Fishing",
+    "subtopic": "Overfishing",
+    "date": "2025-04",
+    "image": "../MultiMedia/Images/challenges-main/overfishing.webp",
+    "link": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0319525"
+  },
+
+  {
+    "id": 73,
+    "title": "Strategies and sustainability in fast charging station deployment for electric vehicles",
+    "subtopic": "Electric Vehicles",
+    "date": "2024-01",
+    "image": "../MultiMedia/Images/solutions-main/electric-vehicles.webp",
+    "link": "https://www.nature.com/articles/s41598-023-50825-7"
+  },
+  {
+    "id": 74,
+    "title": "Sustainability challenges throughout the electric vehicle battery value chain",
+    "subtopic": "Electric Vehicles",
+    "date": "2024-03",
+    "image": "../MultiMedia/Images/solutions-main/electric-vehicles.webp",
+    "link": "https://www.sciencedirect.com/science/article/pii/S1364032123010341"
+  },
+  {
+    "id": 75,
+    "title": "A comparative performance of machine learning algorithm to predict electric vehicles energy consumption: A path towards sustainability",
+    "subtopic": "Electric Vehicles",
+    "date": "2021-10",
+    "image": "../MultiMedia/Images/solutions-main/electric-vehicles.webp",
+    "link": "https://journals.sagepub.com/doi/full/10.1177/0958305X211044998?casa_token=7xOrSB-JMDEAAAAA%3A4hApGKrDhq-Z1FHIwzXM_3tgnXEwPzvWzhcLsRVQerQ5s804ThkGyhPQK7dnzdO2lauZBKcOpuo"
+  },
+
+  {
+    "id": 76,
+    "title": "Hydrogen Energy as Future of Sustainable Mobility",
+    "subtopic": "Hydrogen Vehicles",
+    "date": "2022-05",
+    "image": "../MultiMedia/Images/researches-main/hydrogen-vehicles.webp",
+    "link": "https://www.frontiersin.org/journals/energy-research/articles/10.3389/fenrg.2022.893475/full"
+  },
+  {
+    "id": 77,
+    "title": "Enabling Safe and Sustainable Hydrogen Mobility: Circular Economy-Driven Management of Hydrogen Vehicle Safety",
+    "subtopic": "Hydrogen Vehicles",
+    "date": "2023-09",
+    "image": "../MultiMedia/Images/researches-main/hydrogen-vehicles.webp",
+    "link": "https://www.mdpi.com/2227-9717/11/9/2730"
+  },
+  {
+    "id": 78,
+    "title": "Hydrogen-Powered Vehicles: Comparing the Powertrain Efficiency and Sustainability of Fuel Cell versus Internal Combustion Engine Cars",
+    "subtopic": "Hydrogen Vehicles",
+    "date": "2024-02",
+    "image": "../MultiMedia/Images/researches-main/hydrogen-vehicles.webp",
+    "link": "https://www.mdpi.com/1996-1073/17/5/1085"
+  },
+
+  {
+    "id": 79,
+    "title": "Sustainability Indicators of Surface Public Transportation",
+    "subtopic": "Public Transit",
+    "date": "2023-10",
+    "image": "../MultiMedia/Images/researches-main/public-transit.webp",
+    "link": "https://www.mdpi.com/2071-1050/15/21/15289"
+  },
+  {
+    "id": 80,
+    "title": "AI-Driven Approach for Enhancing Sustainability in Urban Public Transportation",
+    "subtopic": "Public Transit",
+    "date": "2024-09",
+    "image": "../MultiMedia/Images/researches-main/public-transit.webp",
+    "link": "https://www.mdpi.com/2071-1050/16/17/7763"
+  },
+  {
+    "id": 81,
+    "title": "Public transportation and sustainability: A review",
+    "subtopic": "Public Transit",
+    "date": "2016-03",
+    "image": "../MultiMedia/Images/researches-main/public-transit.webp",
+    "link": "https://link.springer.com/article/10.1007/s12205-016-0705-0"
+  },
+
+  {
+    "id": 82,
+    "title": "Design of Sustainable Asphalt Mixtures for Bike Lanes Using RAP and Ceramic Waste as Substitutes for Natural Aggregates",
+    "subtopic": "Bike Lanes",
+    "date": "2022-11",
+    "image": "../MultiMedia/Images/researches-main/bike-lanes.webp",
+    "link": "https://www.mdpi.com/2071-1050/14/23/15777"
+  },
+  {
+    "id": 83,
+    "title": "CYCLING TOWARDS SUSTAINABILITY: MOTIVATIONS FOR BICYCLE USE IN URBAN SETTINGS",
+    "subtopic": "Bike Lanes",
+    "date": "2025-07",
+    "image": "../MultiMedia/Images/researches-main/bike-lanes.webp",
+    "link": "https://www.planningmalaysia.org/index.php/pmj/article/view/1747"
+  },
+  {
+    "id": 84,
+    "title": "Do Safe Bike Lanes Really Slow Down Cars? A Simulation-Based Approach to Investigate the Effect of Retrofitting Safe Cycling Lanes on Vehicular Traffic",
+    "subtopic": "Bike Lanes",
+    "date": "2022-03",
+    "image": "../MultiMedia/Images/researches-main/bike-lanes.webp",
+    "link": "https://www.mdpi.com/1660-4601/19/7/3818"
+  },
+
+  {
+    "id": 85,
+    "title": "Can Digital Transformation Promote Green Technology Innovation?",
+    "subtopic": "Green Tech",
+    "date": "2022-06",
+    "image": "../MultiMedia/Images/researches-main/green-tech.webp",
+    "link": "https://www.mdpi.com/2071-1050/14/12/7497"
+  },
+  {
+    "id": 86,
+    "title": "Green technology innovation development in China in 1990-2015",
+    "subtopic": "Green Tech",
+    "date": "2019-12",
+    "image": "../MultiMedia/Images/researches-main/green-tech.webp",
+    "link": "https://www.sciencedirect.com/science/article/pii/S0048969719339853"
+  },
+  {
+    "id": 87,
+    "title": "Green Technology and its Implications Worldwide",
+    "subtopic": "Green Tech",
+    "date": "2020-10",
+    "image": "../MultiMedia/Images/researches-main/green-tech.webp",
+    "link": "https://www.researchgate.net/profile/Muhammad-Zaid-Qamar-2/publication/350443477_Green_Technology_and_its_Implications_Worldwide/links/605fc55e92851cd8ce6fbc80/Green-Technology-and-its-Implications-Worldwide.pdf"
+  },
+
+  {
+    "id": 88,
+    "title": "Carbon Capture and Utilization Update",
+    "subtopic": "Carbon Capture",
+    "date": "2017-01",
+    "image": "../MultiMedia/Images/solutions-main/carbon-capture.webp",
+    "link": "https://onlinelibrary.wiley.com/doi/full/10.1002/ente.201600747"
+  },
+  {
+    "id": 89,
+    "title": "A comprehensive review of carbon capture science and technologies",
+    "subtopic": "Carbon Capture",
+    "date": "2024-06",
+    "image": "../MultiMedia/Images/solutions-main/carbon-capture.webp",
+    "link": "https://www.sciencedirect.com/science/article/pii/S2772656823000829"
+  },
+  {
+    "id": 90,
+    "title": "Technical Perspective of Carbon Capture, Utilization, and Storage",
+    "subtopic": "Carbon Capture",
+    "date": "2022-07",
+    "image": "../MultiMedia/Images/solutions-main/carbon-capture.webp",
+    "link": "https://www.sciencedirect.com/science/article/pii/S2095809922000595"
+  },
+
+  {
+    "id": 91,
+    "title": "Advances in Smart Environment Monitoring Systems Using IoT and Sensors",
+    "subtopic": "environmental monitoring systems",
+    "date": "2020-05",
+    "image": "../MultiMedia/Images/researches-main/environmental-monitoring-systems.webp",
+    "link": "https://www.mdpi.com/1424-8220/20/11/3113"
+  },
+  {
+    "id": 92,
+    "title": "Design of a Water Environment Monitoring System Based on Wireless Sensor Networks",
+    "subtopic": "environmental monitoring systems",
+    "date": "2009-08",
+    "image": "../MultiMedia/Images/researches-main/environmental-monitoring-systems.webp",
+    "link": "https://www.mdpi.com/1424-8220/9/8/6411"
+  },
+  {
+    "id": 93,
+    "title": "Environmental Monitoring: A Comprehensive Review on Optical Waveguide and Fiber-Based Sensors",
+    "subtopic": "environmental monitoring systems",
+    "date": "2022-11",
+    "image": "../MultiMedia/Images/researches-main/environmental-monitoring-systems.webp",
+    "link": "https://www.mdpi.com/2079-6374/12/11/1038"
+  },
+
+  {
+    "id": 94,
+    "title": "Adapting cities to the surge: A comprehensive review of climate-induced urban flooding",
+    "subtopic": "Flooding",
+    "date": "2024-06",
+    "image": "../MultiMedia/Images/researches-main/flooding.webp",
+    "link": "https://www.sciencedirect.com/science/article/pii/S2590123024003773"
+  },
+  {
+    "id": 95,
+    "title": "How urban form impacts flooding",
+    "subtopic": "Flooding",
+    "date": "2024-08",
+    "image": "../MultiMedia/Images/researches-main/flooding.webp",
+    "link": "https://www.nature.com/articles/s41467-024-50347-4"
+  },
+  {
+    "id": 96,
+    "title": "Enhancement of river flooding due to global warming",
+    "subtopic": "Flooding",
+    "date": "2022-11",
+    "image": "../MultiMedia/Images/researches-main/flooding.webp",
+    "link": "https://www.nature.com/articles/s41598-022-25182-6"
+  },
+
+  {
+    "id": 97,
+    "title": "Droughts and floods in a changing climate and implications for multi-hazard urban planning: A review",
+    "subtopic": "Droughts",
+    "date": "2024-12",
+    "image": "../MultiMedia/Images/challenges-main/climate-change.webp",
+    "link": "https://www.sciencedirect.com/science/article/pii/S2590252024000291"
+  },
+  {
+    "id": 98,
+    "title": "Global droughts connected by linkages between drought hubs",
+    "subtopic": "Droughts",
+    "date": "2023-01",
+    "image": "../MultiMedia/Images/challenges-main/climate-change.webp",
+    "link": "https://www.nature.com/articles/s41467-022-35531-8"
+  },
+  {
+    "id": 99,
+    "title": "Effectiveness of Drought Indices in the Assessment of Different Types of Droughts, Managing and Mitigating Their Effects",
+    "subtopic": "Droughts",
+    "date": "2022-08",
+    "image": "../MultiMedia/Images/challenges-main/climate-change.webp",
+    "link": "https://www.mdpi.com/2225-1154/10/9/125"
+  },
+
+  {
+    "id": 100,
+    "title": "Links between climate change and hurricanes in the North Atlantic",
+    "subtopic": "Hurricanes",
+    "date": "2023-04",
+    "image": "../MultiMedia/Images/researches-main/hurricanes.webp",
+    "link": "https://journals.plos.org/climate/article?id=10.1371/journal.pclm.0000186"
+  },
+  {
+    "id": 101,
+    "title": "Increased U.S. coastal hurricane risk under climate change",
+    "subtopic": "Hurricanes",
+    "date": "2023-04",
+    "image": "../MultiMedia/Images/researches-main/hurricanes.webp",
+    "link": "https://www.science.org/doi/full/10.1126/sciadv.adf0259"
+  },
+  {
+    "id": 102,
+    "title": "Associating Increased Chemical Exposure to Hurricane Harvey in a Longitudinal Panel Using Silicone Wristbands",
+    "subtopic": "Hurricanes",
+    "date": "2022-05",
+    "image": "../MultiMedia/Images/researches-main/hurricanes.webp",
+    "link": "https://www.mdpi.com/1660-4601/19/11/6670"
+  },
+
+  {
+    "id": 103,
+    "title": "Environmental controls on the distribution of wildfire at multiple spatial scales",
+    "subtopic": "Wildfires",
+    "date": "2009-02",
+    "image": "../MultiMedia/Images/researches-main/wildfires.webp",
+    "link": "https://esajournals.onlinelibrary.wiley.com/doi/full/10.1890/07-1289.1"
+  },
+  {
+    "id": 104,
+    "title": "A Review of the Occurrence and Causes for Wildfires and Their Impacts on the Geoenvironment",
+    "subtopic": "Wildfires",
+    "date": "2004-08",
+    "image": "../MultiMedia/Images/researches-main/wildfires.webp",
+    "link": "https://www.mdpi.com/2571-6255/7/8/295"
+  },
+  {
+    "id": 105,
+    "title": "Wildfires under changing climate, and their environmental and health impacts",
+    "subtopic": "Wildfires",
+    "date": "2025-04",
+    "image": "../MultiMedia/Images/researches-main/wildfires.webp",
+    "link": "https://link.springer.com/article/10.1007/s11368-025-04020-y"
+  },
+
+  {
+    "id": 106,
+    "title": "The physical mechanisms of induced earthquakes",
+    "subtopic": "Earthquakes",
+    "date": "2023-12",
+    "image": "../MultiMedia/Images/researches-main/earthquakes.webp",
+    "link": "https://www.nature.com/articles/s43017-023-00497-8"
+  },
+  {
+    "id": 107,
+    "title": "A review on slow earthquakes in the Japan Trench",
+    "subtopic": "Earthquakes",
+    "date": "2023-01",
+    "image": "../MultiMedia/Images/researches-main/earthquakes.webp",
+    "link": "https://link.springer.com/article/10.1186/s40645-022-00528-w"
+  },
+  {
+    "id": 108,
+    "title": "Environmental effects and seismogenic source characterization of the December 2020 earthquake sequence near Petrinja, Croatia",
+    "subtopic": "Earthquakes",
+    "date": "2022-03",
+    "image": "../MultiMedia/Images/researches-main/earthquakes.webp",
+    "link": "https://academic.oup.com/gji/article/230/2/1394/6554549"
+  },
+
+  {
+    "id": 109,
+    "title": "Environmental impact of bioplastic use: A review",
+    "subtopic": "Bioplastics",
+    "date": "2021-09",
+    "image": "../MultiMedia/Images/researches-main/bioplastics.webp",
+    "link": "https://www.cell.com/heliyon/fulltext/S2405-8440(21)02021-1"
+  },
+  {
+    "id": 110,
+    "title": "Bioplastic classifications and innovations in antibacterial, antifungal, and antioxidant applications",
+    "subtopic": "Bioplastics",
+    "date": "2023-11",
+    "image": "../MultiMedia/Images/researches-main/bioplastics.webp",
+    "link": "https://www.sciencedirect.com/science/article/pii/S2369969823000452"
+  },
+  {
+    "id": 111,
+    "title": "Bioplastic production in terms of life cycle assessment: A state-of-the-art review",
+    "subtopic": "Bioplastics",
+    "date": "2023-07",
+    "image": "../MultiMedia/Images/researches-main/bioplastics.webp",
+    "link": "https://www.sciencedirect.com/science/article/pii/S2666498423000194"
+  },
+
+  {
+    "id": 112,
+    "title": "Biodegradable Packaging Materials for Foods Preservation: Sources, Advantages, Limitations, and Future Perspectives",
+    "subtopic": "Biodegradable Packaging",
+    "date": "2023-06",
+    "image": "../MultiMedia/Images/solutions-main/biodegradable-packaging.webp",
+    "link": "https://www.mdpi.com/2079-6412/13/7/1176"
+  },
+  {
+    "id": 113,
+    "title": "A Step toward Sustainability: A Review of Biodegradable Packaging in the Pharmaceutical Industry",
+    "subtopic": "Biodegradable Packaging",
+    "date": "2023-09",
+    "image": "../MultiMedia/Images/solutions-main/biodegradable-packaging.webp",
+    "link": "https://journals.lww.com/mtsp/fulltext/2023/07030/a_step_toward_sustainability__a_review_of.1.aspx?context=latestarticles"
+  },
+  {
+    "id": 114,
+    "title": "Advanced technologies in biodegradable packaging using intelligent sensing to fight food waste",
+    "subtopic": "Biodegradable Packaging",
+    "date": "2024-03",
+    "image": "../MultiMedia/Images/solutions-main/biodegradable-packaging.webp",
+    "link": "https://www.sciencedirect.com/science/article/pii/S0141813024004501"
+  },
+
+  {
+    "id": 115,
+    "title": "Green Building Materials for Circular Economy - Geopolymer Foams ",
+    "subtopic": "Green Building Materials",
+    "date": "2023-07",
+    "image": "../MultiMedia/Images/researches-main/green-building-materials.webp",
+    "link": "https://distantreader.org/stacks/journals/peti/peti-11997.pdf"
+  },
+  {
+    "id": 116,
+    "title": "Green Buildings as a Necessity for Sustainable Environment Development: Dilemmas and Challenges",
+    "subtopic": "Green Building Materials",
+    "date": "2022-10",
+    "image": "../MultiMedia/Images/researches-main/green-building-materials.webp",
+    "link": "https://www.mdpi.com/2071-1050/14/20/13121"
+  },
+  {
+    "id": 117,
+    "title": "Green building practices to integrate renewable energy in the construction sector: a review",
+    "subtopic": "Green Building Materials",
+    "date": "2023-12",
+    "image": "../MultiMedia/Images/researches-main/green-building-materials.webp",
+    "link": "https://link.springer.com/article/10.1007/s10311-023-01675-2"
+  }
+]
