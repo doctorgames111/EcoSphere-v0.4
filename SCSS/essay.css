@@ -1,0 +1,515 @@
+body {
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* light background for white-mode consistency */
+/* card backgrounds will be white */
+body[data-theme=dark] {
+  background: #121212;
+  color: #e5e5e5;
+}
+
+body[data-theme=dark] a {
+  color: #e5e5e5;
+}
+
+body[data-theme=dark] .navbar {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+body[data-theme=dark] .site-footer {
+  background: #111;
+  color: #ccc;
+}
+
+body[data-theme=dark] .account-content,
+body[data-theme=dark] .prefs-list,
+body[data-theme=dark] .info-list {
+  background: #1e1e1e;
+  color: #ddd;
+}
+
+body[data-theme=dark] .info-row,
+body[data-theme=dark] .pref-row {
+  border-color: #333;
+}
+
+body[data-theme=dark] .edit-dialog {
+  background: #2a2a2a;
+  color: #eee;
+}
+
+/* general containers */
+body[data-theme=dark] .page-section,
+body[data-theme=dark] .account-wrapper,
+body[data-theme=dark] .page-container,
+body[data-theme=dark] .prefs-list,
+body[data-theme=dark] .info-list,
+body[data-theme=dark] .product-card,
+body[data-theme=dark] .impl-card,
+body[data-theme=dark] .challenge-card,
+body[data-theme=dark] .solution-card,
+body[data-theme=dark] .research-card,
+body[data-theme=dark] .future-card,
+body[data-theme=dark] .team-card {
+  background: #1e1e1e;
+  color: #ddd;
+}
+
+body[data-theme=dark] .page-section.bg-white {
+  background: #202020;
+}
+
+body[data-theme=dark] .page-section.bg-light {
+  background: #1f1f1f;
+}
+
+body[data-theme=dark] .page-section.bg-alt {
+  background: #232323;
+}
+
+/* hero areas get a darker, more neutral background in dark mode */
+body[data-theme=dark] .hero,
+body[data-theme=dark] .challenges-hero,
+body[data-theme=dark] .solutions-hero,
+body[data-theme=dark] .news-hero,
+body[data-theme=dark] .research-hero,
+body[data-theme=dark] .about-hero {
+  background: #181818 !important;
+  color: #e5e5e5;
+}
+
+/* full-page containers like login/signup should also darken */
+body[data-theme=dark] .login-container,
+body[data-theme=dark] .signup-container {
+  background: #181818;
+}
+
+/* form controls, buttons, dropdowns, modals, notifications */
+body[data-theme=dark] input,
+body[data-theme=dark] select,
+body[data-theme=dark] textarea,
+body[data-theme=dark] button {
+  background: #2a2a2a;
+  color: #ddd;
+  border-color: #444;
+}
+
+body[data-theme=dark] .dropdown-content,
+body[data-theme=dark] .advanced-modal,
+body[data-theme=dark] .confirm-dialog,
+body[data-theme=dark] .notification {
+  background: #2a2a2a;
+  color: #ddd;
+}
+
+/* ensure dropdown arrows, inputs etc retain visibility */
+body[data-theme=dark] .theme-selector {
+  border-color: #555;
+}
+
+/* use primary green instead of red */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Cairo", sans-serif;
+  color: #1f2937;
+  background: #ffffff;
+}
+
+.essay-hero {
+  background: linear-gradient(135deg, #16a34a, #15803d);
+  color: #ffffff;
+  padding: 4rem 1rem;
+  text-align: center;
+  margin-top: 80px;
+  box-shadow: 0 4px 12px rgba(22, 163, 74, 0.15);
+}
+
+.essay-hero .page-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.essay-hero h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0 0 0.75rem;
+  letter-spacing: -0.5px;
+}
+
+.essay-hero .subtitle {
+  opacity: 0.95;
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.essay-content {
+  padding: 3.5rem 1rem;
+  background: #ffffff;
+}
+
+.essay-content .page-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+article > h2:first-of-type {
+  margin-top: 0;
+}
+
+.essay-section {
+  margin-bottom: 3.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid #f0f0f0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.essay-section:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.essay-section h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0 0 1.25rem;
+  color: #0b2a15;
+  position: relative;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+.essay-section h2::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #16a34a, #15803d);
+  border-radius: 2px;
+  transition: width 0.4s ease;
+}
+
+.essay-section:hover h2::after {
+  width: 90px;
+}
+
+.essay-section h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 1.5rem 0 0.75rem;
+  transition: color 0.3s ease;
+}
+
+.essay-section p {
+  line-height: 1.8;
+  color: #6b7280;
+  margin: 0 0 1rem;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.essay-section p:last-child {
+  margin-bottom: 0;
+}
+
+.essay-section ul,
+.essay-section ol {
+  margin: 1.5rem 0;
+  padding-left: 1.75rem;
+}
+
+.essay-section li {
+  margin-bottom: 0.75rem;
+  line-height: 1.8;
+  color: #6b7280;
+}
+
+.essay-section li strong {
+  color: #0b2a15;
+  font-weight: 600;
+}
+
+.essay-section ul li::marker {
+  color: #16a34a;
+}
+
+.subsection {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: #f9fafb;
+  border-left: 4px solid #16a34a;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.subsection:hover {
+  background: #f0fdf4;
+  box-shadow: 0 2px 8px rgba(22, 163, 74, 0.1);
+  transform: translateX(4px);
+}
+
+.subsection h3 {
+  margin-top: 0;
+  color: #15803d;
+}
+
+.benefit-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin: 2.5rem 0;
+}
+
+.benefit-card {
+  padding: 1.75rem;
+  background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+  border: 1px solid #bbf7d0;
+  border-radius: 8px;
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 2px 4px rgba(22, 163, 74, 0.08);
+}
+
+.benefit-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(22, 163, 74, 0.15);
+  border-color: #16a34a;
+  background: linear-gradient(135deg, #f0fdf4 0%, #86efac 100%);
+}
+
+.benefit-card h3 {
+  font-size: 1.15rem;
+  color: #15803d;
+  margin: 0 0 0.75rem;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.benefit-card p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #374151;
+  line-height: 1.6;
+}
+
+.challenge-item {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: #fef3c7;
+  border-left: 4px solid #f59e0b;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.challenge-item:hover {
+  background: #fef9e7;
+  box-shadow: 0 4px 12px rgba(245, 158, 11, 0.15);
+  transform: translateX(4px);
+}
+
+.challenge-item h3 {
+  color: #b45309;
+  margin-top: 0;
+  font-weight: 600;
+}
+
+.challenge-item p {
+  color: #78350f;
+  margin: 0.75rem 0 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+.fade-in:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.fade-in:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.fade-in:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.fade-in:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+.fade-in:nth-child(5) {
+  animation-delay: 0.5s;
+}
+
+.fade-in:nth-child(6) {
+  animation-delay: 0.6s;
+}
+
+footer-component {
+  display: block;
+  margin-top: 4rem;
+  animation: slideUp 0.6s ease-out;
+  animation-delay: 0.3s;
+  animation-fill-mode: both;
+}
+
+body[data-theme=dark] {
+  background: #1a1a1a;
+}
+
+body[data-theme=dark] .essay-content {
+  background: #1a1a1a;
+  color: #e5e5e5;
+}
+
+body[data-theme=dark] .essay-section {
+  border-bottom-color: #333;
+}
+
+body[data-theme=dark] .essay-section h2 {
+  color: #86efac;
+}
+
+body[data-theme=dark] .essay-section h3 {
+  color: #86efac;
+}
+
+body[data-theme=dark] .essay-section p {
+  color: #b3b3b3;
+}
+
+body[data-theme=dark] .subsection {
+  background: #252525;
+  border-left-color: #16a34a;
+}
+
+body[data-theme=dark] .subsection:hover {
+  background: #2d3d2d;
+}
+
+body[data-theme=dark] .benefit-card {
+  background: linear-gradient(135deg, #1f3a1f 0%, #2d4a2d 100%);
+  border-color: #16a34a;
+}
+
+body[data-theme=dark] .benefit-card:hover {
+  background: linear-gradient(135deg, #2d4a2d 0%, #3d5a3d 100%);
+  border-color: #22c55e;
+}
+
+body[data-theme=dark] .benefit-card h3 {
+  color: #86efac;
+}
+
+body[data-theme=dark] .benefit-card p {
+  color: #d1d5db;
+}
+
+body[data-theme=dark] .challenge-item {
+  background: #4c3a0a;
+  border-left-color: #f59e0b;
+}
+
+body[data-theme=dark] .challenge-item:hover {
+  background: #5c4a1a;
+}
+
+body[data-theme=dark] .challenge-item h3 {
+  color: #fbbf24;
+}
+
+body[data-theme=dark] .challenge-item p {
+  color: #fef3c7;
+}
+
+body[data-theme=dark] .essay-section li {
+  color: #b3b3b3;
+}
+
+body[data-theme=dark] .essay-section li strong {
+  color: #86efac;
+}
+
+@media (max-width: 768px) {
+  .essay-hero {
+    padding: 3rem 1rem;
+    margin-top: 70px;
+  }
+  .essay-hero h1 {
+    font-size: 2rem;
+  }
+  .essay-hero .subtitle {
+    font-size: 1rem;
+  }
+  .essay-section h2 {
+    font-size: 1.5rem;
+  }
+  .essay-section h3 {
+    font-size: 1.1rem;
+  }
+  .benefit-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .essay-content {
+    padding: 2.5rem 1rem;
+  }
+}
+@media (max-width: 600px) {
+  .essay-hero {
+    padding: 2.5rem 1rem;
+  }
+  .essay-hero h1 {
+    font-size: 1.65rem;
+  }
+  .essay-section h2 {
+    font-size: 1.35rem;
+  }
+  .essay-section h2::after {
+    width: 50px;
+  }
+  .essay-section {
+    margin-bottom: 2.5rem;
+  }
+  .subsection {
+    padding: 1.25rem;
+    margin: 1.5rem 0;
+  }
+  .benefit-card {
+    padding: 1.5rem;
+  }
+  .essay-content {
+    padding: 2rem 1rem;
+  }
+}/*# sourceMappingURL=essay.css.map */

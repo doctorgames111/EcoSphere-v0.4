@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biogas | Solutions</title>
+    <script src="../JS/navbar.js"></script>
+    <link rel="stylesheet" href="../SCSS/solutions-main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <navbar-component></navbar-component>
+
+    <!-- HERO SECTION -->
+    <section class="solutions-hero">
+      <div class="hero-content">
+        <h1>Sustainable Solutions</h1>
+        <p>Innovative approaches to environmental challenges</p>
+      </div>
+    </section>
+
+    <!-- SOLUTIONS GRID -->
+    <section class="page-section bg-white">
+      <div class="page-container">
+        <div class="section-header">
+          <h2>Renewable & Sustainable Technologies</h2>
+          <p class="section-subtitle">
+            Explore proven solutions that reduce environmental impact and
+            promote sustainability
+          </p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="product-filters">
+          <div class="filter-categories">
+            <button class="filter-btn active" data-filter="all">
+              All Solutions
+            </button>
+            <button class="filter-btn" data-filter="renewable">
+              Renewable Energy
+            </button>
+            <button class="filter-btn" data-filter="agriculture">
+              Agriculture
+            </button>
+            <button class="filter-btn" data-filter="waste">
+              Waste Management
+            </button>
+            <button class="filter-btn" data-filter="technology">
+              Technology
+            </button>
+          </div>
+          <div class="filter-controls">
+            <input
+              type="text"
+              id="solutionSearch"
+              class="filter-search"
+              placeholder="Search solutions…"
+            />
+            <button id="advancedFilterBtn" class="filter-btn advanced-btn">
+              Advanced
+            </button>
+          </div>
+        </div>
+
+        <div id="solutionsContainer">
+          <!-- Dynamic sections will be generated here by JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- IMPLEMENTATION SECTION -->
+    <section class="page-section bg-green-light">
+      <div class="page-container">
+        <div class="section-header">
+          <h2>How to Implement</h2>
+          <p class="section-subtitle">
+            Take action and make these solutions part of your life
+          </p>
+        </div>
+        <div class="implementation-grid">
+          <div class="impl-card">
+            <div class="impl-number">1</div>
+            <h3>Learn & Understand</h3>
+            <p>Educate yourself about the solution and its benefits</p>
+          </div>
+          <div class="impl-card">
+            <div class="impl-number">2</div>
+            <h3>Research Options</h3>
+            <p>Find available solutions in your area or organization</p>
+          </div>
+          <div class="impl-card">
+            <div class="impl-number">3</div>
+            <h3>Take Action</h3>
+            <p>Implement the solution and track your environmental impact</p>
+          </div>
+          <div class="impl-card">
+            <div class="impl-number">4</div>
+            <h3>Share Impact</h3>
+            <p>Inspire others by sharing your sustainability journey</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ADVANCED FILTER MODAL & OVERLAY -->
+    <div id="overlay" class="overlay hidden"></div>
+    <div id="advancedModal" class="advanced-modal hidden">
+      <div class="modal-header">
+        <button id="includeBtn" class="mode-btn active">Include</button>
+        <button id="excludeBtn" class="mode-btn">Exclude</button>
+        <button id="closeModal" class="modal-close">×</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-categories">
+          <button class="modal-cat-btn" data-value="renewable">
+            Renewable Energy
+          </button>
+          <button class="modal-cat-btn" data-value="agriculture">
+            Agriculture
+          </button>
+          <button class="modal-cat-btn" data-value="waste">
+            Waste Management
+          </button>
+          <button class="modal-cat-btn" data-value="technology">
+            Technology
+          </button>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button id="clearAdvanced" class="modal-action">Clear</button>
+        <button id="cancelAdvanced" class="modal-action">Cancel</button>
+        <button id="applyAdvanced" class="modal-action primary">Apply</button>
+      </div>
+    </div>
+
+    <!-- CONFIRMATION DIALOG -->
+    <div id="confirmOverlay" class="overlay hidden"></div>
+    <div id="confirmDialog" class="confirm-dialog hidden">
+      <p>
+        You currently have an advanced filter applied. Applying a category will
+        clear the advanced filter. Continue?
+      </p>
+      <div class="confirm-buttons">
+        <button id="confirmOk" class="modal-action primary">OK</button>
+        <button id="confirmCancel" class="modal-action">Cancel</button>
+      </div>
+    </div>
+
+    <script src="../JS/scroll.js"></script>
+    <script src="../JS/solutions-main.js"></script>
+    <footer-component></footer-component>
+    <script src="../JS/footer.js"></script>
+  </body>
+</html>

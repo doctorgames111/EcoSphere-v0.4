@@ -1,0 +1,83 @@
+[
+  {
+    "id": 1,
+    "title": "Solar Power Systems",
+    "category": "renewable",
+    "description": "Affordable panels that let homes and businesses generate clean energy.",
+    "image": "../MultiMedia/Images/solutions-main/solar-power-systems.webp",
+    "link": "solar.html",
+    "state": "available"
+  },
+  {
+    "id": 2,
+    "title": "Vertical Farming",
+    "category": "agriculture",
+    "description": "Urban farms that reduce land use and water consumption.",
+    "image": "../MultiMedia/Images/solutions-main/vertical-farming.webp",
+    "link": "vertical-farm.html",
+    "state": "available"
+  },
+  {
+    "id": 3,
+    "title": "Biodegradable Packaging",
+    "category": "waste",
+    "description": "Materials that break down naturally, cutting plastic waste.",
+    "image": "../MultiMedia/Images/solutions-main/biodegradable-packaging.webp",
+    "link": "biopack.html",
+    "state": "available"
+  },
+  {
+    "id": 4,
+    "title": "Biogas",
+    "category": "renewable",
+    "description": "Clean energy generated from organic waste.",
+    "image": "../MultiMedia/Images/solutions-main/biogas.webp",
+    "link": "biogas.html",
+    "state": "available"
+  },
+  {
+    "id": 5,
+    "title": "Wind Turbines",
+    "category": "renewable",
+    "description": "High-efficiency turbines that produce energy with zero emissions.",
+    "image": "../MultiMedia/Images/solutions-main/wind-turbines.webp",
+    "link": "wind.html",
+    "state": "available"
+  },
+  {
+    "id": 6,
+    "title": "Composting Systems",
+    "category": "waste",
+    "description": "Household and community composters that turn organic refuse into soil.",
+    "image": "../MultiMedia/Images/solutions-main/composting-systems.webp",
+    "link": "compost.html",
+    "state": "unavailable"
+  },
+  {
+    "id": 7,
+    "title": "Carbon Capture",
+    "category": "technology",
+    "description": "Systems that remove CO2 directly from the air or industrial sources.",
+    "image": "../MultiMedia/Images/solutions-main/carbon-capture.webp",
+    "link": "carbon-capture.html",
+    "state": "available"
+  },
+  {
+    "id": 8,
+    "title": "Electric Vehicles",
+    "category": "technology",
+    "description": "Zero-emission cars and public transport solutions.",
+    "image": "../MultiMedia/Images/solutions-main/electric-vehicles.webp",
+    "link": "ev.html",
+    "state": "unavailable"
+  },
+  {
+    "id": 9,
+    "title": "Smart Irrigation",
+    "category": "agriculture",
+    "description": "Sensors and systems that reduce water usage on farms.",
+    "image": "../MultiMedia/Images/solutions-main/smart-irrigation.webp",
+    "link": "smart-irrigation.html",
+    "state": "unavailable"
+  }
+]

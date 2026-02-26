@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biogas | Account</title>
+    <script src="../JS/navbar.js"></script>
+    <link rel="stylesheet" href="../SCSS/account.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet"/>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  </head>
+  <body>
+    <navbar-component></navbar-component>
+
+    <div class="account-wrapper">
+      <nav class="account-nav">
+        <ul>
+          <li class="active" data-tab="info">Account Info</li>
+          <li data-tab="prefs">Preferences</li>
+        </ul>
+      </nav>
+
+      <section class="account-content visible" id="info">
+        <h2>Account Information</h2>
+        
+        <!-- Profile Image Section -->
+        <div class="profile-image-section">
+          <div class="profile-image-container">
+            <img id="profileImageDisplay" src="../MultiMedia/Images/default-user-icon.webp" alt="Profile" class="profile-image">
+            <button id="uploadImageBtn" class="upload-btn"><i class="fas fa-camera"></i> Change Photo</button>
+          </div>
+        </div>
+        
+        <div class="info-list" id="accountInfo">
+          <!-- populated by JS -->
+        </div>
+      </section>
+
+      <section class="account-content" id="prefs">
+        <h2>Preferences</h2>
+        <div class="prefs-list">
+          <div class="pref-row">
+            <span class="pref-label">Theme</span>
+            <div class="pref-value theme-selector">
+              <span id="currentTheme">Light</span>
+              <i class="fas fa-chevron-down"></i>
+              <ul class="theme-dropdown hidden">
+                <li data-theme="light">Light</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- image upload modal -->
+    <div id="imageUploadOverlay" class="overlay"></div>
+    <div id="imageUploadDialog" class="edit-dialog">
+      <h3>Upload Profile Photo</h3>
+      <div id="imageUploadBody">
+        <p style="color: #6b7280; margin-bottom: 1rem;">Max file size: 2 MB (JPG, PNG)</p>
+        <input type="file" id="imageFileInput" accept="image/jpeg,image/png" style="display: block; margin-bottom: 1rem;">
+        <div id="imagePreview" style="margin: 1rem 0; text-align: center;"></div>
+        <div id="imageProgress" style="display: none; margin: 1rem 0;">
+          <div style="background: #e5e7eb; height: 6px; border-radius: 3px; overflow: hidden;">
+            <div id="progressBar" style="height: 100%; background: #22c55e; width: 0%; transition: width 0.3s ease;"></div>
+          </div>
+        </div>
+      </div>
+      <div class="dialog-buttons">
+        <button id="imageUploadCancel" class="btn">Cancel</button>
+        <button id="imageUploadConfirm" class="btn btn-primary">Upload</button>
+      </div>
+    </div>
+
+    <!-- generic edit dialog for field changes -->
+    <div id="editOverlay" class="overlay"></div>
+    <div id="editDialog" class="edit-dialog">
+      <h3 id="editTitle"></h3>
+      <div id="editBody"></div>
+      <div class="dialog-buttons">
+        <button id="editCancel" class="btn">Cancel</button>
+        <button id="editConfirm" class="btn btn-primary">Confirm</button>
+      </div>
+    </div>
+
+    <footer-component></footer-component>
+
+    <script src="../JS/scroll.js"></script>
+    <script src="../JS/notifications.js"></script>
+    <script src="../JS/validation.js"></script>
+    <script src="../JS/account.js"></script>
+  </body>
+</html>

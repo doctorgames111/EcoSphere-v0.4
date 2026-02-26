@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biogas | Environmental News</title>
+    <script src="../JS/navbar.js"></script>
+    <link rel="stylesheet" href="../SCSS/news-main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet"/>
+  </head>
+  <body>
+    <navbar-component></navbar-component>
+
+    <!-- HERO SECTION -->
+    <section class="news-hero">
+      <div class="hero-content">
+        <h1>Latest Environmental News</h1>
+        <p>Stay informed about global environmental challenges and solutions</p>
+      </div>
+    </section>
+
+    <!-- NEWS GRID -->
+    <section class="page-section bg-light">
+      <div class="page-container">
+        <div class="section-header">
+          <h2>Top Headlines</h2>
+          <p class="section-subtitle">Recent articles from around the world</p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="product-filters">
+          <div class="filter-categories">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="climate">Climate</button>
+            <button class="filter-btn" data-filter="pollution">Pollution</button>
+            <button class="filter-btn" data-filter="renewable">Renewable</button>
+            <button class="filter-btn" data-filter="wildlife">Wildlife</button>
+            <button class="filter-btn" data-filter="policy">Policy</button>
+          </div>
+          <div class="filter-controls">
+            <input type="text" id="newsSearch" class="filter-search" placeholder="Search news…" />
+            <button id="searchBtn" class="filter-btn">Search</button>
+          </div>
+        </div>
+
+        <div class="product-grid" id="newsGrid">
+          <!-- Dynamic cards will be inserted here -->
+        </div>
+        <div class="text-center" style="margin-top:1rem;">
+          <button id="showMoreBtn" class="filter-btn hidden">Show More</button>
+        </div>
+        <div id="loadingOverlay" class="loading-overlay hidden">
+          <div class="loading-spinner"></div>
+        </div>
+      </div>
+    </section>
+
+    <script src="../JS/scroll.js"></script>
+    <script src="../JS/news-main.js"></script>
+    <footer-component></footer-component>
+    <script src="../JS/footer.js"></script>
+  </body>
+</html>

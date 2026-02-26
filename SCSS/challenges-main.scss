@@ -1,0 +1,114 @@
+@use 'global';
+@use 'components';
+
+body {
+  font-family: global.$main-font;
+  color: global.$main-text-dark;
+  background: white;
+}
+
+// ===== HERO SECTION =====
+.challenges-hero {
+  background: linear-gradient(135deg, global.$primary-600 0%, global.$primary-500 100%);
+  color: white;
+  padding: global.$spacing-3xl global.$spacing-lg;
+  text-align: center;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+
+  .hero-content {
+    max-width: 700px;
+
+    h1 {
+      font-size: global.$font-size-4xl;
+      font-weight: global.$font-weight-bold;
+      margin-bottom: global.$spacing-md;
+      line-height: 1.2;
+    }
+
+    p {
+      font-size: global.$font-size-lg;
+      opacity: 0.95;
+      line-height: 1.6;
+    }
+  }
+}
+
+// ===== CTA BOX =====
+.cta-box {
+  text-align: center;
+  padding: global.$spacing-3xl;
+  background: white;
+  border-radius: global.$radius-xl;
+  box-shadow: global.$shadow-md;
+
+  h2 {
+    font-size: global.$font-size-3xl;
+    color: global.$primary-700;
+    margin-bottom: global.$spacing-md;
+  }
+
+  p {
+    font-size: global.$font-size-lg;
+    color: global.$main-text-light;
+    margin-bottom: global.$spacing-xl;
+  }
+
+  .cta-btn {
+    display: inline-block;
+    padding: global.$spacing-md global.$spacing-xl;
+    background: global.$primary-600;
+    color: white;
+    text-decoration: none;
+    border-radius: global.$radius-lg;
+    font-weight: global.$font-weight-bold;
+    font-size: global.$font-size-lg;
+    transition: all global.$transition-base;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+      background: global.$primary-700;
+      transform: translateY(-2px);
+      box-shadow: 0 10px 20px rgba(22, 163, 74, 0.3);
+    }
+  }
+}
+
+// ===== RESPONSIVE =====
+@media (max-width: global.$breakpoint-md) {
+  .challenges-hero {
+    min-height: 250px;
+    padding: global.$spacing-2xl global.$spacing-md;
+
+    .hero-content {
+      h1 {
+        font-size: global.$font-size-3xl;
+      }
+
+      p {
+        font-size: global.$font-size-base;
+      }
+    }
+  }
+
+  .cta-box {
+    padding: global.$spacing-2xl;
+
+    h2 {
+      font-size: global.$font-size-2xl;
+    }
+
+    p {
+      font-size: global.$font-size-base;
+    }
+
+    .cta-btn {
+      font-size: global.$font-size-base;
+      padding: global.$spacing-md global.$spacing-lg;
+    }
+  }
+}

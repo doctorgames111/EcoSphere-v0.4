@@ -1,0 +1,330 @@
+/* Dark mode overrides - professional comprehensive theme */
+:root.dark-mode,
+html.dark-mode {
+  --bg-base: #0a0e14; /* deep navy page background */
+  --bg-card: #111827; /* card backgrounds */
+  --bg-accent: #1a202c; /* slightly lighter for depth */
+  --text-primary: #f3f4f6; /* near-white text */
+  --text-secondary: #d1d5db; /* lighter gray text */
+  --text-muted: #9ca3af; /* muted gray text */
+  --accent: #22c55e; /* green accent */
+  --border-color: rgba(255, 255, 255, 0.08);
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+html.dark-mode,
+html.dark-mode body {
+  background-color: var(--bg-base) !important;
+  color: var(--text-primary) !important;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+/* Hero sections and large backgrounds */
+html.dark-mode .hero,
+html.dark-mode .challenges-hero,
+html.dark-mode .solutions-hero,
+html.dark-mode .research-hero,
+html.dark-mode .news-hero,
+html.dark-mode .about-hero {
+  background: var(--bg-base) !important;
+  color: var(--text-primary) !important;
+}
+
+/* Hero video - MAKE SURE IT'S VISIBLE */
+html.dark-mode .hero video,
+html.dark-mode video {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+/* Hero overlay - ensure it doesn't hide video */
+html.dark-mode .hero::before,
+html.dark-mode .hero-overlay {
+  background: rgba(10, 14, 20, 0.4) !important;
+}
+
+/* All sections */
+html.dark-mode .page-section {
+  background: var(--bg-base) !important;
+  color: var(--text-primary) !important;
+}
+
+html.dark-mode .page-section.bg-white,
+html.dark-mode .page-section.bg-light,
+html.dark-mode .page-section.bg-alt,
+html.dark-mode .page-section.bg-green-light {
+  background: var(--bg-base) !important;
+}
+
+/* All cards and containers */
+html.dark-mode .product-card,
+html.dark-mode .impl-card,
+html.dark-mode .challenge-card,
+html.dark-mode .solution-card,
+html.dark-mode .research-card,
+html.dark-mode .team-card,
+html.dark-mode .team-card-container,
+html.dark-mode .target-item,
+html.dark-mode .cta-box,
+html.dark-mode .contact-form,
+html.dark-mode .login-box,
+html.dark-mode .signup-box,
+html.dark-mode .info-row,
+html.dark-mode .profile-image-container,
+html.dark-mode .account-content,
+html.dark-mode .account-wrapper,
+html.dark-mode .edit-dialog,
+html.dark-mode .confirm-dialog,
+html.dark-mode .advanced-modal,
+html.dark-mode .modal-content {
+  background-color: var(--bg-card) !important;
+  color: var(--text-primary) !important;
+  border-color: var(--border-color) !important;
+  box-shadow: var(--shadow) !important;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+/* Account navigation sidebar */
+html.dark-mode .account-nav {
+  background-color: var(--bg-accent) !important;
+  color: var(--text-primary) !important;
+  border-color: var(--border-color) !important;
+}
+
+html.dark-mode .account-nav ul {
+  border-color: var(--border-color) !important;
+}
+
+html.dark-mode .account-nav li {
+  color: var(--text-secondary) !important;
+  border-color: var(--border-color) !important;
+}
+
+html.dark-mode .account-nav li:hover {
+  background-color: rgba(34, 197, 94, 0.1) !important;
+  color: var(--text-primary) !important;
+}
+
+html.dark-mode .account-nav li.active {
+  background-color: var(--bg-card) !important;
+  color: var(--accent) !important;
+  border-left-color: var(--accent) !important;
+}
+
+/* Section headers, filters, modals and dropdowns */
+html.dark-mode .section-header,
+html.dark-mode .section-header-centered,
+html.dark-mode .product-filters,
+html.dark-mode .dropdown-content,
+html.dark-mode .dropdown-btn,
+html.dark-mode .modal-content {
+  background-color: var(--bg-card) !important;
+  color: var(--text-primary) !important;
+  border-color: var(--border-color) !important;
+}
+
+html.dark-mode .section-header h2,
+html.dark-mode .section-header h3,
+html.dark-mode .section-header-centered h2,
+html.dark-mode .section-header-centered h3 {
+  color: var(--text-primary) !important;
+}
+
+html.dark-mode .section-header p,
+html.dark-mode .section-header-centered p {
+  color: var(--text-muted) !important;
+}
+
+/* Navbar and footer */
+html.dark-mode .navbar {
+  background: linear-gradient(
+    180deg,
+    rgba(10, 14, 20, 0.95),
+    rgba(10, 14, 20, 0.9)
+  ) !important;
+  color: var(--text-primary) !important;
+  border-color: var(--border-color) !important;
+  transition: background 0.3s ease;
+}
+
+html.dark-mode .navbar li::after {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+html.dark-mode .site-footer {
+  background: linear-gradient(
+    180deg,
+    rgba(10, 14, 20, 0.95),
+    rgba(10, 14, 20, 0.9)
+  ) !important;
+  color: var(--text-primary) !important;
+  border-color: var(--border-color) !important;
+  transition: background 0.3s ease;
+}
+
+/* Links, buttons and interactive elements */
+html.dark-mode a,
+html.dark-mode .dropdown-link,
+html.dark-mode .cta-btn,
+html.dark-mode .profile-name,
+html.dark-mode button,
+html.dark-mode .contact-btn {
+  color: var(--text-primary) !important;
+  transition: color 0.3s ease;
+}
+
+html.dark-mode a:hover,
+html.dark-mode .dropdown-link:hover,
+html.dark-mode .cta-btn:hover,
+html.dark-mode button:hover {
+  color: var(--accent) !important;
+}
+
+html.dark-mode .cta-btn,
+html.dark-mode .contact-btn {
+  background-color: var(--accent) !important;
+  color: #000 !important;
+}
+
+html.dark-mode .cta-btn:hover,
+html.dark-mode .contact-btn:hover {
+  background-color: #16a34a !important;
+  color: #000 !important;
+}
+
+/* All text elements */
+html.dark-mode h1,
+html.dark-mode h2,
+html.dark-mode h3,
+html.dark-mode h4,
+html.dark-mode h5,
+html.dark-mode h6 {
+  color: var(--text-primary) !important;
+}
+
+html.dark-mode p,
+html.dark-mode .main-text-light,
+html.dark-mode .text-muted,
+html.dark-mode .field-label,
+html.dark-mode small,
+html.dark-mode span {
+  color: var(--text-muted) !important;
+}
+
+html.dark-mode .field-value {
+  color: var(--text-secondary) !important;
+}
+
+/* Form inputs, textareas, selects */
+html.dark-mode input,
+html.dark-mode textarea,
+html.dark-mode select {
+  background-color: rgba(255, 255, 255, 0.05) !important;
+  color: var(--text-primary) !important;
+  border: 1px solid var(--border-color) !important;
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+html.dark-mode input:focus,
+html.dark-mode textarea:focus,
+html.dark-mode select:focus {
+  background-color: rgba(255, 255, 255, 0.08) !important;
+  border-color: var(--accent) !important;
+  outline: none !important;
+}
+
+html.dark-mode input::placeholder,
+html.dark-mode textarea::placeholder {
+  color: var(--text-muted) !important;
+  opacity: 0.7;
+}
+
+/* Overlays and modals */
+html.dark-mode .overlay {
+  background: rgba(10, 14, 20, 0.7) !important;
+  transition: background 0.3s ease;
+}
+
+html.dark-mode .overlay.visible {
+  background: rgba(10, 14, 20, 0.8) !important;
+}
+
+/* Icons */
+html.dark-mode .card-icon,
+html.dark-mode .stat-icon,
+html.dark-mode .logo-icon,
+html.dark-mode i {
+  color: var(--accent) !important;
+  transition: color 0.3s ease;
+}
+
+html.dark-mode .fa-leaf,
+html.dark-mode .fa-hourglass-half {
+  color: var(--accent) !important;
+}
+
+/* Not implemented section */
+html.dark-mode .not-implemented-section {
+  background-color: var(--bg-base) !important;
+}
+
+html.dark-mode .not-implemented-section .message {
+  background-color: var(--bg-card) !important;
+  color: var(--text-primary) !important;
+}
+
+html.dark-mode .not-implemented-section h1 {
+  color: var(--text-primary) !important;
+}
+
+html.dark-mode .not-implemented-section p {
+  color: var(--text-muted) !important;
+}
+
+/* Fine-tune spacing and borders */
+html.dark-mode hr,
+html.dark-mode .divider {
+  border-color: var(--border-color) !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  html.dark-mode {
+    --bg-base: #0a0e14;
+    --bg-card: #111827;
+  }
+
+  html.dark-mode .hero,
+  html.dark-mode .page-section {
+    padding: 2rem 1rem !important;
+  }
+}
+
+/* Helper classes */
+.dark-mode-force-light {
+  color: var(--text-primary) !important;
+}
+
+.dark-mode-force-muted {
+  color: var(--text-muted) !important;
+}
+
+/* Smooth transitions for all theme elements */
+html.dark-mode * {
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+/* Ensure images stay visible */
+html.dark-mode img {
+  opacity: 1 !important;
+}
