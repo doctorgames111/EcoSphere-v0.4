@@ -25,7 +25,7 @@ class FooterComponent extends HTMLElement {
           <p class="footer-copy">&copy; ${currentYear} Ecosphere. All rights reserved.</p>
         </div>
         <nav class="footer-right">
-          <a href="../HTML/index.html">Home</a>
+          <a href="../index.html">Home</a>
           <a href="../HTML/about.html">About</a>
         </nav>
       </footer>
