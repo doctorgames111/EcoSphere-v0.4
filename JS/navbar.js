@@ -6,7 +6,7 @@ class NavbarComponent extends HTMLElement {
             <nav class="navbar">
               <div class="navbar-links">
                 <ul>
-                <li><a href="../HTML/index.html" class="active">Home</a></li>
+                <li><a href="../index.html" class="active">Home</a></li>
                 <li><a href="../HTML/challenges-main.html">Challenges</a></li>
                 <li><a href="../HTML/solutions-main.html">Solutions</a></li>
                 <li><a href="../HTML/ai.html">Eco AI</a></li>
